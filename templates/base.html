@@ -62,7 +62,7 @@
             <!-- Logo -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'store' %}" class="navbar-brand nav-link main-logo-link" aria-label="Go to Home Page">
-                    <h2 class="logo-font my-0"><strong>Forevergreen Cacti</strong></h2>
+                    <h2 class="logo-font my-0">Forevergreen Cacti</h2>
                 </a>
             </div>
 
@@ -84,7 +84,7 @@
 
             <!-- Navigation Links -->
 
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0" id="navbarText">
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="nav nav-pills justify-content-end text-center text-lg-right my-0">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="{% url 'store' %}">Home</a>
@@ -94,11 +94,10 @@
                     </li>
                     <!-- Dropdown menu -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown" href="#" id="user-options" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown " href="#" id="user-options" data-bs-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
-                                <div><i class="fas fa-user fa-lg"></i></div>
-                                <p class="my-0">My Profile</p>
+                                <p class="my-0">My Profile <i class="fas fa-user fa-lg"></i></p>
                             </div>
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -122,13 +121,13 @@
                     <li class="nav-item">
                         <a class="text-info font-weight-bold nav-link" href="">
                             <div class="text-center">
-                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                                 <p class="my-0">
                                     {% if grand_total %}
                                     ${{ grand_total|floatformat:2 }}
                                     {% else %}
                                     €0.00
                                     {% endif %}
+                                    <i class="fas fa-shopping-bag fa-lg"></i>
                                 </p>
                             </div>
                         </a>
@@ -138,7 +137,8 @@
         </nav>
         <div class="row bg-white">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 {% include 'includes/mobile-header.html' %}
