@@ -28,6 +28,7 @@ class Product(models.Model):
         )
     sku = models.CharField(max_length=200, null=True, blank=True)
     name = models.CharField(max_length=200)
+    variety = models.TextField(max_length=300,null=True, blank=True)
     description = models.TextField()
     care = models.TextField()
     price = models.DecimalField(max_digits=5, decimal_places=2)
