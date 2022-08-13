@@ -14,18 +14,24 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    color: #555;
+    text-decoration: none;
 }
 
 .navbar-brand {
     font-family: 'cairo', sans-serif;
     font-size: 1.4rem;
     font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #edf3f2;
 }
 
 .nav-link:active,
 .nav-link:hover  {
     font-weight: bold;
     text-decoration: underline;
+    color: #edf3f2;
 }
 
 .shop-now-button {
@@ -46,13 +52,16 @@ body {
 }
 
 /* Navbar */
-.navbar {
+.navigation {
     background-color: #698467;
+}
+
+.nav2 {
+    background-color: #edf3f2;
 }
 
 .a.nav-link {
     color: #edf3f2;
-    text-decoration: none;
 }
 
 /* from Bulma - to style fontawesome icons */
