@@ -6,6 +6,10 @@ class Category(models.Model):
     """
     Model to display product category name.
     """
+    class Meta:
+        '''Adding verbose name to amend admin view'''
+        verbose_name_plural = 'Categories'
+
     name = models.CharField(max_length=200, unique=True)
     friendly_name = models.CharField(
         max_length=200, null=True, blank=True, unique=True
@@ -28,7 +32,7 @@ class Product(models.Model):
         )
     sku = models.CharField(max_length=200, null=True, blank=True)
     name = models.CharField(max_length=200)
-    variety = models.TextField(max_length=300,null=True, blank=True)
+    variety = models.TextField(max_length=300, null=True, blank=True)
     description = models.TextField()
     care = models.TextField()
     price = models.DecimalField(max_digits=5, decimal_places=2)
