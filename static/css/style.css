@@ -1,3 +1,4 @@
+/* Base */
 html {
     height: 100%;
 }
@@ -5,6 +6,7 @@ html {
 body {
     /* background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed; */
     background-size: cover;
+    background: #edf3f2;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
@@ -27,8 +29,8 @@ body {
 }
 
 .shop-now-button {
-    background: black;
-    color: white;
+    color: #edf3f2;
+    background: #698467;
     min-width: 260px;
 }
 
@@ -36,17 +38,21 @@ body {
 .shop-now-button:active,
 .shop-now-button:focus {
     background: #222;
-    color: white;
+    color: #edf3f2;
 }
 
 .main-logo-link {
     width: fit-content;
 }
 
-.shop-now-button {
-    background: black;
-    color: white;
-    min-width: 260px;
+/* Navbar */
+.navbar {
+    background-color: #698467;
+}
+
+.a.nav-link {
+    color: #edf3f2;
+    text-decoration: none;
 }
 
 /* from Bulma - to style fontawesome icons */
@@ -58,7 +64,23 @@ body {
     width: 1.5rem;
 }
 
-/*-- Media Queries ---*/
+/* Products Page */
+.background {
+    height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: #edf3f2;
+	z-index: -1;
+}
+
+/* Footer */
+.foot-bg {
+    background-color: #698467;
+}
+
+/* Media Queries */
 /* Container on xl desktop screens */
 @media (min-width: 1200px) {
     .container {

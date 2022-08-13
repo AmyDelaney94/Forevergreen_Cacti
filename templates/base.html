@@ -51,7 +51,7 @@
     <header class="container-fluid fixed-top">
 
         <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-md navbar-light p-5 pe-5" id="topnav">
+        <nav class="navbar navbar-expand-md navbar-light p-4 pe-3" id="topnav">
 
             <!-- Small screen Navigation -->
             <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
@@ -155,13 +155,31 @@
     {% block page_header %}
     {% endblock %}
 
-    {% block content %}
-    <!-- Page content goes here -->
-    {% endblock %}
+    <main>
+        {% block content %}
+        <!-- Page content goes here -->
+        {% endblock %}
+    </main>
 
     {% block postloadjs %}
     {% endblock %}
 
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 foot-bg container-fluid fixed-bottom">
+        <p class="m-0 text-center text-white">Follow us:
+            <a href="https://www.facebook.com" target="_blank" rel="noopener"
+                aria-label="Visit our Facebook page for more"><i class="fab fa-facebook-square ms-3 text-white"></i></a>
+        </p>
+        <p class="m-0 text-center text-white">Designed by Amy Delaney</p>
+    </footer>
+
+    <script>
+        setTimeout(function () {
+            let messages = document.getElementById("msg");
+            let alert = new bootstrap.Alert(messages);
+            alert.close();
+        }, 2500);
+    </script>
 
 </body>
 
