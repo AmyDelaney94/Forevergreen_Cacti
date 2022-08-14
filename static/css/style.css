@@ -93,9 +93,22 @@ a.categoty-tag > span.badge:hover {
     color: #698467;
 }
 
+.scroll-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.scroll-link {
+    cursor: pointer;
+}
+
 /* Footer */
 .foot-bg {
-    background-color: #698467;
+    background-color: #edf3f2;
+    color: #698467 !important;
 }
 
 /* Media Queries */
