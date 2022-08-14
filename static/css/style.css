@@ -105,6 +105,14 @@ a.categoty-tag > span.badge:hover {
     cursor: pointer;
 }
 
+/* Shopping Cart*/
+.shopping-btn {
+    background: #555;
+    color: #222;
+    border: 1px solid #698467;
+}
+
+
 /* Footer */
 .foot-bg {
     background-color: #edf3f2;
