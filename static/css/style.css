@@ -60,7 +60,7 @@ body {
     background-color: #edf3f2;
 }
 
-.a.nav-link {
+a.nav-link {
     color: #edf3f2;
 }
 
@@ -82,6 +82,15 @@ body {
 	position: fixed;
 	background: #edf3f2;
 	z-index: -1;
+}
+
+a.categoty-tag > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
+
+.category-tag > span.badge {
+    color: #698467;
 }
 
 /* Footer */
