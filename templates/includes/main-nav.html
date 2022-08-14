@@ -16,9 +16,9 @@
                 Indoor Succulents
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Flowering</a>
-                <a href="" class="dropdown-item">Short</a>
-                <a href="" class="dropdown-item">All Indoor Succulents</a>
+                <a href="{% url 'products' %}?category=flowering" class="dropdown-item">Flowering</a>
+                <a href="{% url 'products' %}?category=short" class="dropdown-item">Short</a>
+                <a href="{% url 'products' %}?category=short,flowering" class="dropdown-item">All Indoor Succulents</a>
             </div>
         </li>
 
@@ -27,22 +27,21 @@
                 Outdoor Succulents
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Tall</a>
-                <a href="" class="dropdown-item">Warm Climates</a>
-                <a href="" class="dropdown-item">Cool Climates</a>
-                <a href="" class="dropdown-item">All Outdoor Cacti</a>
+                <a href="{% url 'products' %}?category=taller" class="dropdown-item">Tall</a>
+                <a href="{% url 'products' %}?category=warm_climates" class="dropdown-item">Warm Climates</a>
+                <a href="{% url 'products' %}?category=cool_climates" class="dropdown-item">Cool Climates</a>
+                <a href="{% url 'products' %}?category=taller,cool_climates,warm_climates" class="dropdown-item">All Outdoor Cacti</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Specials
+                Extras
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Special Offers</a>
+                <a href="{% url 'products' %}?category=multi" class="dropdown-item">Multipacks</a>
+                <a href="{% url 'products' %}?category=rare" class="dropdown-item">Rare</a>
+                <a href="{% url 'products' %}?category=multi,rare" class="dropdown-item">All Special Offers</a>
             </div>
         </li>
     </ul>
