@@ -1,108 +1,235 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<!-- TOC --><a name="forevergreen-cacti"></a>
+# Forevergreen Cacti
 
-Welcome AmyDelaney94,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+A link to the deployed website can be found <a href="#" alt="link to deployed heroku website">here</a>.
 
-## Gitpod Reminders
+<img src="media/readme-images/responsive.png" alt="image of project responsiveness on varying screen sizes">
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+<!-- TOC --><a name="table-of-contents"></a>
+## Table of Contents
+<!-- TOC start -->
+- [Forevergreen Cacti](#forevergreen-cacti)
+  * [Table of Contents](#table-of-contents)
+    + [Project Design](#project-design)
+    + [User Experience](#user-experience)
+    + [Goals](#goals)
+    + [User Stories](#user-stories)
+    + [Wireframe](#wireframe-1)
+    + [Future Features](#future-features)
+    + [Languages Used](#languages-used)
+    + [Technology Used](#technology-used)
+    + [Testing](#testing)
+      - [Validation Testing:](#validation-testing)
+    + [Bugs:](#bugs)
+      - [Fixed Bugs:](#fixed-bugs)
+      - [Unfixed Bug:](#unfixed-bug)
+    + [Deployment:](#deployment)
+    + [References:](#references)
+    + [Acknowledgements](#acknowledgements)
+<!-- TOC end -->
+<br/>
 
-`python3 -m http.server`
+<!-- TOC --><a name="project-design"></a>
+### Project Design
 
-A blue button should appear to click: _Make Public_,
+- <a href="https://balsamiq.com/wireframes/">Balsamiq wireframes</a> was used to design the wireframes used in the design phase of this project. 
 
-Another blue button should appear to click: _Open Browser_.
+| Page | Wireframe |
+| --- | --- |
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- <a href="https://www.lucidchart.com/" >Lucid Charts</a> was used to design the unique models used in this project.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+<br/>
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+#### Colour Scheme
+- Colours were chosen using 
 
-To log into the Heroku toolbelt CLI:
+<br/>
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+<!-- TOC --><a name="user-experience"></a>
+## User Experience
+<!-- TOC --><a name="goals"></a>
+### Goals
+- The main goal of the Forevergreen Cacti is to sell a wide range of cacti and succulents. 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+#### Personal Goals
+My personal goals for this project are that:
+- The site is easy to navigate and user friendly.
+- The purpose of the site is evident and inviting to users.
+- That users want to create an account and engage with its content. 
+- The platform that enables the user to find and purchase the product they are looking for.
+- The site is presentable and appealing to increase aesthetic appeal.
 
-------
+#### Target Audience 
+- Users aged 18 and over
+- Users with an interest in growing cacti and succulents.
 
-## Release History
+#### Customer Goals
+- Finding product that fits their taste
+- Buy product through an easy and secure payment flow
+- See their previous purchases
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+<br/>
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+<!-- TOC --><a name="user-stories"></a>
+### User Stories
+As a user I want to:
+- 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+As an Admin I want to: 
+- 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+<br/>
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+<!-- TOC --><a name="agile-design"></a>
+### Agile Design
+- An Agile Approach was used to develop this site. This was achieved by breaking the project down into smaller tasks and assigning each of those tasks labels based on priority. 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+To complete the overall aim of the Forevergreen Cacti store concept, 25 issues were documented as specific tasks called User Stories. These User Stories are small sections of the project designed to accomplish a specific goal. 
+The acceptance criteria I followed when completing this development project was that if when completing and testing each User Story, the task was completed successfully such as adding an item to the cart or logging in and out of the site then I deemed the passing conditions met. Once the User Story was working effectively it was moved across the Kanban board. 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+As mentioned above this project used a Kanban board, which was set up in my <a href="https://github.com/users/AmyDelaney94/projects/2" alt="link to Kanban Board">GitHub Projects here</a>, to help keep track of the work that was left to do, that was in progress and that was completed.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Examples of how my project progressed through the use of the Kanban board can be seen below.
+| Week | Board |
+| --- | --- |
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+<br/>
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+<!-- TOC --><a name="current-features"></a>
+### Current Features
+The user stories mentioned above were used to ensure a positive UX was achieved.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+| Feature | Details | Example |
+| --- | --- | --- | 
+| Favicon | - The favicon image was selected to continue with the cactus theme of the site. <br/> - The favicon icon is visible in the browser tab and search engine history.<br/> - It adds a unique identifier to the site. | <img src="static/images/favicon.png" alt="favicon image"> | 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+<br/>
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+<!-- TOC --><a name="future-features"></a>
+### Future Features
+Given more time to work on this project the overall scope of the website could be expanded. 
+-  
 
-------
 
-## FAQ about the uptime script
+<br/>
 
-**Why have you added this script?**
+<!-- TOC --><a name="languages-used"></a>
+### Languages Used
+- Python: Language chosen to develop the interaction with the server. 
+- JavaScript: Language chosen to run scripts in the project.
+- HTML: Markup language used to create the front end web pages.
+- CSS: Styling language used to add custom styling to site.
+<br/>
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+<!-- TOC --><a name="technology-used"></a>
+### Technology Used
+| Type | Technology | Function |
+| --- | --- | --- | 
+|Framework | Django| python framework used to create backend logic |
+|Framework | Bootstrap5 | CSS Framework for developing mobile-first responsiveness across multiple screen sizes |
+| Library | Django-allauth | Authentication library used to create the user accounts| 
+| Application | Crispy Forms |  Used to manage Django Forms without having to re-write templates |
+| Application | Psycopg2 | Database driver used to connect to the database to Python code | 
+| Database | SQLite|  used as the database during development|
+| Database | PostgreSQL| The database used to store all the data on deployment site | 
+| Other Resources | Chrome DevTools | Used to debug and view changes | 
+| Other Resources | Balsamiq Wireframes| Chosen to design wireframes during project planning | 
+| Other Resources | LucidCharts |  Used to create models used in the project | 
+| Other Resources | Font Awesome | Used for visual icons on the site to enhance UX | 
+| Other Resources |  | Used to choose the colour scheme for the site.
+| Other Resources | Am I Responsive? | Used to see responsive design throughout the process.
+| GitHub | GitHub Projects | Used to visually track the progress of the project | 
+| GitHub | GitHub Issues | Used to create the user stories managed in GitHub Projects | 
+| Host | GitHub | To store the source code and ReadMe for the project | 
+| Host | GitPod | IDE selected to build the project | 
+| Host | Heroku | To Host the deployed website | 
+| Package Manager | Pip3 | Used to install extra software not found in Python Library
+<br/>
 
-**How will this affect me?**
+<!-- TOC --><a name="testing"></a>
+### Testing
+| Feature Tested| Testing Method | Example | Result |  
+| --- | --- | --- | --- | 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+<!-- TOC --><a name="validation-testing"></a>
+#### Validation Testing:
+| Resource Used | Code Tested | Example | Result |  
+| --- | --- | --- | --- | 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+<br/>
 
-**Can I opt out?**
+#### Lighthouse Testing
+- The site was also tested for its <a href="https://web.dev/performance-scoring/"> Lighthouse Performance Score </a>and the results were as follows.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+<br/>
 
-**Anything more?**
+<!-- TOC --><a name="bugs"></a>
+### Bugs:
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+<!-- TOC --><a name="fixed-bugs"></a>
+#### Fixed Bugs:
+| Bug | Appearance | Solution |
+| --- | --- | --- | 
 
----
 
-Happy coding!
+<!-- TOC --><a name="unfixed-bug"></a>
+#### Unfixed Bug:
+- 
+
+<br/>
+
+<!-- TOC --><a name="deployment"></a>
+### Deployment:
+Heroku was used to deploy the site and it was achieved by following the steps below:
+  1.	Go to the Heroku's website.
+  2.	Create an account if required or select log in.
+  3.	From the Heroku dashboard, click on the “New” button in top righthand corner then "Create new app".
+  4.	Enter a unique "App name" and "Choose a region" before clicking on "Create app".
+  5.	Go to "Config Vars" under the "Settings" tab.
+  6.	Click on "Reveals Config Vars" and enter the following information:
+	      - CLOUDINARY_URL : add your cloudinary key here.
+        - DATABASE_URL : add the url from postgres database.
+        - SECRET_KEY = a secret key for your app.
+        - PORT : 8000
+        - DISABLE_COLLECTSTATIC = 1 during development (Remove when deploying production!)
+  7.	Go to "Buildpacks" section and click "Add buildpack".
+  8.	Select "/herokupython" and click "Save changes"
+  9.	Go to "Deployment method", under the "Deploy" tab select "GitHub" and click on "Connect to GitHub".
+  10.	Go to "Connect to GitHub" section and "Search" the repository to be deployed.
+  11.	Click "Connect" next the repository name.
+  12.	Choose "Automatic deploys" or "Manual deploys" to deploy your application.
+  <br/>
+- Project Version Control – Git was used to control the versions of the project during development. Changes were added, committed, and  saved using commands such as ‘git add .’ and ‘git commit’, and ‘git push’. Once changes had been committed, they were pushed and stored  on the GitHub repository with the rest of the projects source code. 
+<br/>
+
+<!-- TOC --><a name="references"></a>
+### References:
+- <a href="https://creativecommons.org/licenses/by/4.0/"> Creative Commons</a> was used as a source for the favicon image used in this project. 
+- <a href="https://lucid.app/documents#/documents?folder_id=home" alt="Link to lucid charts site">Lucid Charts</a>
+- <a href="https://stackoverflow.com/questions/53067186/how-to-use-slugs-in-django-url" alt="Link to stack overflow site">Stack Overflow</a> -> Using Slugs in Django
+- <a href="https://www.w3schools.com/bootstrap5/bootstrap_cards.php">W3Schools</a> -> Using cards in Bootstrap 5. 
+- <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" alt="Bootstrap Documentation">Bootstrap Documentation</a> -> For implementing bootstrap throughout the project
+- <a href="https://docs.djangoproject.com/en/3.2/ref/contrib/messages/#using-messages-in-views-and-templates" alt="Django Messages Information">Django Messages</a>
+- <a href="https://django-allauth.readthedocs.io/en/latest/" alt="Allauth Documentation">AllAuth Documentation</a>
+- <a href="https://www.youtube.com/c/TheNetNinja" alt="net ninja django tutorials">NetNinja Django Tutorials</a>
+
+<br/>
+
+<!-- TOC --><a name="acknowledgements"></a>
+### Acknowledgements
+- First, I would like to thank my Partner for his love and support throughout the completion of this project.
+- I would also like to thank my mentor Marcel for his advice and support.
+- My friends for constantly testing the project.
+- Tutor Assistance for their help and support.
+- Code Institute and its Slack community for its support in troubleshooting. 
+- Code Institutes learning materials for its tutorials and examples and providing me with the necessary knowledge to complete this project. 
