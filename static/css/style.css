@@ -73,6 +73,22 @@ a.nav-link {
     width: 1.5rem;
 }
 
+/* Message and Toasts Styling */
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
 /* Products Page */
 .background {
     height: 100%;
@@ -108,10 +124,17 @@ a.categoty-tag > span.badge:hover {
 }
 
 /* Shopping Cart*/
-.shopping-btn {
-    background: #555;
-    color: #222;
-    border: 1px solid #698467;
+.shopping-btn, 
+.cart-btn {
+    background: #698467;
+    color: #edf3f2;
+    margin: 5px;
+}
+
+.cart-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 
