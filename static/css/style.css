@@ -101,7 +101,9 @@ a.categoty-tag > span.badge:hover {
     right: 10px;
 }
 
-.scroll-link {
+.scroll-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 
