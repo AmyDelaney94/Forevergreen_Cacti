@@ -8,5 +8,5 @@ class CheckoutConfig(AppConfig):
     name = 'checkout'
 
     def ready(self):
-        #import not added to top level itss designed to override the default.
+        # import not added to top level itss designed to override the default.
         import checkout.signals
