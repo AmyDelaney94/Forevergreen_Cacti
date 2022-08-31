@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'products',
     'cart',
     'checkout',
-    'crispy-forms',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -64,7 +64,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'forevergreen.urls'
 
-CRISPY_TEMPLATE_PACK = 'bootstrap5'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
