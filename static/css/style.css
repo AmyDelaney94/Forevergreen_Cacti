@@ -145,6 +145,12 @@ a.scroll-link{
 }
 
 
+/* Product Card */
+.card {
+    height: 360px!;
+    width: 360px!;
+}
+
 /* Footer */
 .foot-bg {
     background-color: #edf3f2;
