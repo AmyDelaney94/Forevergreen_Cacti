@@ -23,7 +23,7 @@
 <li class="nav-item dropdown list-unstyled">
     <a class="nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
-            <div><i class="fas fa-user fa-lg"></i></div>
+            <div><i class="fa-solid fa-user-vneck-hair"></i></div>
             <p class="my-0">My Account</p>
         </div>
     </a>
@@ -43,9 +43,9 @@
 <li class="nav-item list-unstyled">
     <a class="nav-link d-block d-lg-none" href="{% url 'view_cart' %}">
         <div class="text-center">
-            <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+            <div><i class="fa-sharp fa-solid fa-cart-shopping"></i></div>
             <p class="my-0">
-                {% if grand_total %}
+                {% if total %}
                     €{{ grand_total|floatformat:2 }}
                 {% else %}
                     €0.00

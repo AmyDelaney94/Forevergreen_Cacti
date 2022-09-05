@@ -48,7 +48,7 @@
     <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}" />
 
     <!-- Fontawesome link -->
-    <script src="https://kit.fontawesome.com/9249e426d1.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6a7de0b6c8.js" crossorigin="anonymous"></script>
 
     <title>Forevergreen Cacti {% block extra_title %}{% endblock %}</title>
 </head>
@@ -96,14 +96,14 @@
                         <a class="nav-link" aria-current="page" href="{% url 'store' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'about' %}" aria-label="About Us">About Us</a>
+                        <a class="nav-link" href="{% url 'about' %}" aria-label="About Us">About Us <i class="fa-solid fa-cactus"></i></a>
                     </li>
                     <!-- Dropdown menu -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown " href="#" id="user-options" data-bs-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
-                                <p class="my-0">My Profile <i class="fas fa-user fa-lg"></i></p>
+                                <p class="my-0">My Profile <i class="fa-solid fa-user-vneck-hair"></i></p>
                             </div>
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
@@ -133,7 +133,7 @@
                                     {% else %}
                                     €0.00
                                     {% endif %}
-                                    <i class="fas fa-shopping-bag fa-lg"></i>
+                                    <i class="fa-sharp fa-solid fa-cart-shopping"></i>
                                 </p>
                             </div>
                         </a>
@@ -141,7 +141,7 @@
                 </ul>
             </div>
         </nav>
-        <!-- <div class="row bg-white">
+        <div class="row bg-white">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
                     aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -150,7 +150,7 @@
                 {% include 'includes/mobile-header.html' %}
                 {% include 'includes/main-nav.html' %}
             </nav>
-        </div> -->
+        </div>
     </header>
 
     <!-- Messages from django documentation -->

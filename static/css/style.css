@@ -144,11 +144,23 @@ a.scroll-link{
     overflow-y: auto;
 }
 
+/* About */
+.about-heading {
+    text-align: center;
+}
+
+.about-body {
+    border-color:#698467;
+}
+
+ul.tips {
+        list-style: none;
+        padding : 0;
+      }
 
 /* Product Card */
-.card {
-    height: 360px!;
-    width: 360px!;
+.card-img-top{
+    height: 354px; 
 }
 
 /* Footer */
