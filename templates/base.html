@@ -54,16 +54,16 @@
 </head>
 
 <body>
-    <header class="container-fluid fixed-top">
+    <header class="container-fluid">
 
         <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-md p-4 pe-3 navigation" id="topnav">
 
             <!-- Small screen Navigation -->
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button> -->
+            </button>
 
             <!-- Logo -->
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
@@ -178,7 +178,7 @@
     <main>
         {% block content %}
         <!-- Page content goes here -->
-        {% endblock %}
+         {% endblock %}
     </main>
 
     {% block postloadjs %}

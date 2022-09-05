@@ -4,7 +4,6 @@ html {
 }
 
 body {
-    /* background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed; */
     background-size: cover;
     background: #edf3f2;
     height: calc(100vh - 164px);
@@ -117,6 +116,14 @@ a.categoty-tag > span.badge:hover {
     right: 10px;
 }
 
+.fa-arrow-up {
+    color: #698467;
+}
+
+a.scroll-link{
+    text-decoration: none;
+}
+
 .scroll-link,
 .update-link,
 .remove-item {
@@ -163,6 +170,6 @@ a.categoty-tag > span.badge:hover {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 100px;
     }
 }
