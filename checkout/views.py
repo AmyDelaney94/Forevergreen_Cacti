@@ -6,8 +6,8 @@ from .forms import OrderForm
 
 def checkout(request):
     ''' Created view for checkout and redirect empty carts to products page '''
-    bag = request.session.get('bag', {})
-    if not bag:
+    cart = request.session.get('cart', {})
+    if not cart:
         messages.error(request, "There's nothing in your cart at the moment")
         return redirect(reverse('products'))
 
