@@ -90,7 +90,6 @@
             </div>
 
             <!-- Navigation Links -->
-
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="nav nav-pills justify-content-end text-center text-lg-right my-0">
                     <li class="nav-item">
@@ -192,28 +191,28 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer mt-auto py-3 foot-bg container-fluid">
+        <div class="mt-auto py-3 d-flex foot-bg container-fluid">
             <div class="col-md-4 px-0 py-4 px-md-4">
-                <h5 class="mb-3 text-uppercase">Forevergreen Cacti</h5>
-                <p class="m-0 text-center">Designed by Amy Delaney</p>
+                <h6 class="mb-3 text-uppercase">Forevergreen Cacti</h6>
+                <p>Designed by: Amy Delaney</p>
+                <p>Copyright &copy; 2022. All rights reserved</p>
             </div>
             <div class="col-md-4 px-0 py-4 px-md-4">
-                <h5 class="mb-3 text-uppercase">Socials</h5>
-                <p class="m-0 text-center">Follow us on Facebook: </p>
-                    <a href="https://www.facebook.com" target="_blank" rel="noopener"
-                        aria-label="Visit our Facebook page for more"><i class="fab fa-facebook-square ms-3"
-                            style=color:#698467></i>
-                    </a>
+                <h6 class="mb-3 text-uppercase">Socials</h6>
+                <p>Follow us on Facebook: <a href="https://www.facebook.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page for more"><i class="fab fa-facebook-square"
+                    style=color:#edf3f2></i></a>
+                </p>
             </div>
             <div class="col-md-4 px-0 py-4 px-md-4">
-                <h5 class="mb-3 text-uppercase">Be in the know!</h5>
+                <h6 class="mb-3 text-uppercase">Be in the know <i class="fa-solid fa-cactus"></i></h6>
                 <p>Join our newsletter and be the first to know when new products are added to the store.</p>
                 <form method="POST" action="{% url 'newsletter' %}" id="newsletter-form" class="text-muted form mb-5"
                     enctype="multipart/form-data">
                     {% csrf_token %}
                     {{ subscribe_form | crispy }}
                     <div class="mt-3">
-                        <button class="btn btn-main hvr-back-pulse" type="submit">Subscribe!</button>
+                        <button class="btn btn-main" type="submit">Subscribe!</button>
                     </div>
                 </form>
             </div>

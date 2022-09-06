@@ -165,9 +165,32 @@ ul.tips {
 
 /* Footer */
 .foot-bg {
-    background-color: #edf3f2;
+    color:#edf3f2;
+    background-color:#698467;
+    display: block;
+    
+}
+
+#newsletter-form input {
+    box-sizing: border-box;
+    height: 40px;
+    padding: 8px 8px;
+    border: 1px solid transparent;
+    border-color:#698467;
+    background-color:#edf3f2;
     color: #698467;
 }
+
+#newsletter-form input::placeholder {
+    color: #a8aeb3;
+}
+
+.btn-main{
+    border-color: #edf3f2;
+    color: #edf3f2;
+    margin: 5px;
+}
+
 
 /* Media Queries */
 /* Container on xl desktop screens */
