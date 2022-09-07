@@ -36,7 +36,7 @@ body {
 .shop-now-button {
     color: #edf3f2;
     background: #698467;
-    min-width: 260px;
+    min-width: 160px;
 }
 
 .shop-now-button:hover,
@@ -64,7 +64,6 @@ a.nav-link {
 }
 
 
-
 /* from Bulma - to style fontawesome icons */
 .icon {
     align-items: center;
@@ -73,6 +72,18 @@ a.nav-link {
     height: 1.5rem;
     width: 1.5rem;
 }
+
+/* Index Page */
+.product-button {
+    color: #edf3f2;
+    background: #698467;
+}
+
+.cat-img{
+    height: 354px; 
+    width: 354px;
+}
+
 
 /* Message and Toasts Styling */
 .message-container {

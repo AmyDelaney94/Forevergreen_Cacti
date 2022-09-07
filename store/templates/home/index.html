@@ -10,12 +10,61 @@
 {% endblock %}
 
 {% block content %}
+<div class="container text-center h-100">
+    <div class="col text-center mt-3">
+        <h2 class="logo-font">Our Products</h2>
+        <hr class="w-50 mb-1 mx-auto">
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-lg-4 px-5 mb-5">
+            <a href="{% url 'products' %}?category=rare" class="text-decoration-none hvr-shrink">
+                <img class="cat-img img-fluid rounded-top" src="{{ MEDIA_URL }}rubyball.jpg" alt="Rare category image">
+                <h4 class="product-button btn btn-lg rounded-bottom py-1">Rare</h4>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4 px-5 mb-5">
+            <a href="{% url 'products' %}?category=cool_climates" class="text-decoration-none hvr-shrink">
+                <img class="cat-img img-fluid rounded-top" src="{{ MEDIA_URL }}sedum_spurium.jpg" alt="Cool Climates category image">
+                <h4 class="product-button btn btn-lg rounded-bottom py-1">Cool Climates</h4>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4 px-5 mb-5">
+            <a href="{% url 'products' %}?category=warm_climates" class="text-decoration-none hvr-shrink">
+                <img class="cat-img img-fluid rounded-top" src="{{ MEDIA_URL }}trailing_jade.jpeg" alt="Warm Climates category image">
+                <h4 class="product-button btn btn-lg rounded-bottom py-1">Warm Climates </h4>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4 px-5 mb-5">
+            <a href="{% url 'products' %}?category=short" class="text-decoration-none hvr-shrink">
+                <img class="cat-img img-fluid rounded-top" src="{{ MEDIA_URL }}drawf.jpg" alt="Short category image">
+                <h4 class="product-button btn btn-lg rounded-bottom py-1">Short</h4>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4 px-5 mb-5">
+            <a href="{% url 'products' %}?category=taller" class="text-decoration-none hvr-shrink">
+                <img class="cat-img img-fluid rounded-top" src="{{ MEDIA_URL }}eves.jpg" alt="Tall category image">
+                <h4 class="product-button btn btn-lg rounded-bottom py-1">Tall</h4>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4 px-5 mb-5">
+            <a href="{% url 'products' %}?category=flowering" class="text-decoration-none hvr-shrink">
+                <img class="cat-img img-fluid rounded-top" src="{{ MEDIA_URL }}narvaecensis.jpg" alt="Flowering category image">
+                <h4 class="product-button btn btn-lg rounded-bottom py-1">Flowering</h4>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4 px-5 mb-5">
+            <a href="{% url 'products' %}?category=multi" class="text-decoration-none hvr-shrink">
+                <img class="cat-img img-fluid rounded-top" src="#" alt="Multipack category image">
+                <h4 class="product-button btn btn-lg rounded-bottom py-1">Multipacks</h4>
+            </a>
+        </div>
+    </div>
+</div>
 <div class="container h-100">
     <div class="row h-100">
-        <div class="col-7 col-md-6 my-auto">
-            <h5 class="display-4 logo-font">
-                Shop for your favourites here! 
-            </h5>
+        <div class="col text-center mt-3">
+            <hr class="w-50 mb-1 mx-auto">
+            <p class=" mt-3 text-center text-md-left">If you can't decide then shop for your new favourites here!</p>
             <div class="my-5">
                 <h4>
                     <a href="{% url 'products' %}" class="shop-now-button btn btn-lg text-uppercase py-3">Shop Now</a>
