@@ -40,7 +40,7 @@ class Order(models.Model):
         product is added to shopping cart, including adding the delivery costs.
         """
         self.total = self.cartitems.aggregate(
-            Sum('cart_total'))['cart_total__sum']
+            Sum('cart_total'))['cart_total__sum'] or 0
         self.grand_total = self.total + self.delivery_cost
         self.save()
 
