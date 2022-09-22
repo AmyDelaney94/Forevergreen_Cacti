@@ -208,8 +208,21 @@ Heroku was used to deploy the site and it was achieved by following the steps be
   10.	Go to "Connect to GitHub" section and "Search" the repository to be deployed.
   11.	Click "Connect" next the repository name.
   12.	Choose "Automatic deploys" or "Manual deploys" to deploy your application.
+  13. Select the correct branch for deployment from the drop-down menu and click Deploy Branch for manual deployment.
+- Note: Ensure in Django settings, DEBUG is False, create a Procfile and save database and secret key to env.py.
   <br/>
 - Project Version Control – Git was used to control the versions of the project during development. Changes were added, committed, and  saved using commands such as ‘git add .’ and ‘git commit’, and ‘git push’. Once changes had been committed, they were pushed and stored  on the GitHub repository with the rest of the projects source code. 
+<br/>
+- Cloning - To clone this repository from GitHub to a local computer to make it easier to fix merge conflicts, add or remove files, and push larger commits or contribute use the following steps:
+
+1. On GitHub, navigate to the main page of the repository.
+2. Above the list of files, click Code.
+3. Click Use GitHub CLI, then the copy icon.
+4. Open Git Bash and change the current working directory to the location where you want the cloned directory.
+5. Type git clone, and then paste the URL that was copied from step 3 above.
+6. Press Enter to create the local clone.
+<br/>
+- Forking - A fork is a copy of a repository. Forking a repository allows you to experiment with changes without affecting the original project. To fork this project, go to the top left of the repository, where you see the Fork Icon and click Fork. This will create a copy of the repository for you.
 <br/>
 
 <!-- TOC --><a name="references"></a>
