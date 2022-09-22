@@ -117,6 +117,7 @@
                             <!-- My Profile Drop-down menu if user is logged in -->
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
+                            <a href="{% url 'admin:index' %}" aria-label="Admin Site" class="dropdown-item">Admin Site</a>
                             <a href="" class="dropdown-item">Store Management</a>
                             {% endif %}
                             <a href="" class="dropdown-item" aria-label="Profile">My Profile</a>
