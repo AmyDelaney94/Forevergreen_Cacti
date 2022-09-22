@@ -49,7 +49,7 @@ def update_cart(request, item_id):
     else:
         cart.pop(item_id)
         messages.success(
-            request, f'Removed quantity of {product.name} from {cart[item_id]}'
+            request, f'Removed quantity of {product.name} from cart'
             )
 
     request.session['cart'] = cart
@@ -59,28 +59,12 @@ def update_cart(request, item_id):
 
 def delete_cart(request, item_id):
     """Remove the item from the shopping cart"""
+    product = get_object_or_404(Product, pk=item_id)
+    cart = request.session.get('cart', {})
     try:
-        product = get_object_or_404(Product, pk=item_id)
-        quantity = None
-        if 'product_quantity' in request.POST:
-            quantity = request.POST['product_quantity']
-            cart = request.session.get('cart', {})
-            messages.success(
-                request, f'Removed {product.name} from {cart[item_id]}'
-            )
-
-        if quantity:
-            del cart[item_id]['product_quantity'][quantity]
-            if not cart[item_id]['product_quantity']:
-                cart.pop(item_id)
-                messages.success(
-                    request, f'Removed {product.name} from {cart[item_id]}'
-                )
-
-        else:
-            cart.pop(item_id)
-            messages.success(
-                request, f'Removed {product.name} from {cart[item_id]}'
+        cart.pop(item_id)
+        messages.success(
+            request, f'Removed {product.name} from Shopping Cart'
             )
 
         request.session['cart'] = cart
