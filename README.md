@@ -106,7 +106,7 @@ The user stories mentioned above were used to ensure a positive UX was achieved.
 
 | Feature | Details | Example |
 | --- | --- | --- | 
-| Favicon | - The favicon image was selected to continue with the cactus theme of the site. <br/> - The favicon icon is visible in the browser tab and search engine history.<br/> - It adds a unique identifier to the site. | <img src="static/images/favicon.png" alt="favicon image"> | 
+| Favicon | - The favicon image was selected to continue with the cactus theme of the site. <br/> - The favicon icon is visible in the browser tab and search engine history.<br/> - It adds a unique identifier to the site. | <img src="static/favicon/favicon.ico" alt="favicon image"> | 
 
 
 <br/>

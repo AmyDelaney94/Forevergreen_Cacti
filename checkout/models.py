@@ -4,6 +4,7 @@ from django.db import models
 from django.db.models import Sum
 from django.conf import settings
 from products.models import Product
+from profiles.models import UserProfile
 
 # Storing Models for secure checkout of shopping Cart.
 
@@ -11,6 +12,9 @@ from products.models import Product
 class Order(models.Model):
     '''Model for entering delivery details'''
     order_number = models.CharField(max_length=32, null=False, editable=False)
+    user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
+                                     null=True, blank=True,
+                                     related_name='orders')
     date = models.DateTimeField(auto_now_add=True)
     username = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)
@@ -28,7 +32,9 @@ class Order(models.Model):
         )
     delivery_cost = 7
     original_cart = models.TextField(null=False, blank=False, default='')
-    stripe_pid = models.CharField(max_length=254, null=False, blank=False, default='')
+    stripe_pid = models.CharField(max_length=254,
+                                  null=False, blank=False,
+                                  default='')
 
     def _generate_order_number(self):
         """
