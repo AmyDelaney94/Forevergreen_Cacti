@@ -85,12 +85,22 @@ a.nav-link {
 }
 
 
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: #edf3f2;
+	z-index: -1;
+}
+
 /* Message and Toasts Styling */
 .message-container {
     position: fixed;
     top: 72px;
     right: 15px;
-    z-index: 99999;
+    z-index: 999999;
 }
 
 .custom-toast {
@@ -145,7 +155,8 @@ a.scroll-link{
 
 /* Shopping Cart*/
 .shopping-btn, 
-.cart-btn {
+.cart-btn,
+.btn-auth {
     background: #698467;
     color: #edf3f2;
     margin: 5px;

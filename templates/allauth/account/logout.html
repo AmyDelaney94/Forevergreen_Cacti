@@ -3,12 +3,14 @@
 {% load i18n %}
 
 {% block head_title %}{% trans "Sign Out" %}{% endblock %}
+{% block inner_content %}
 
-{% block content %}
 <div class="container">
   <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
-      <h1>{% trans "Sign Out" %}</h1>
+    <div class="offset-md-2">
+      <hr>
+      <h2 class="logo-font">{% trans "Sign Out" %}</h2>
+      <hr>
       <p>{% trans 'Are you sure you want to sign out?' %}</p>
     </div>
   </div>
@@ -20,6 +22,7 @@
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}
         <button type="submit">{% trans 'Sign Out' %}</button>
+        <a class="btn btn-auth rounded-0" href="{% url 'store' %}">Home</a>
       </form>
     </div>
   </div>
