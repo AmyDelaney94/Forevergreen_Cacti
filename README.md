@@ -180,6 +180,8 @@ Given more time to work on this project the overall scope of the website could b
 #### Fixed Bugs:
 | Bug | Appearance | Solution |
 | --- | --- | --- | 
+| Stripe API error | <img src="static/readme_media/stripeapi.png" alt="error screen"> | - Updated my env.py file with the correct syntax. |
+| Checkout error | <img src="static/readme_media/country.png" alt="missing country element"> | - To fix this issue I went back and updated the profile and checkout models to have a country field by installing django_countries. <br/> - From there I |
 
 
 <!-- TOC --><a name="unfixed-bug"></a>

@@ -26,17 +26,17 @@ class OrderForm(forms.ModelForm):
             'address_line2': 'Address Line 2',
             'town_or_city': 'Town or City',
             'county': 'County',
-            'country': 'Country',
             'eircode': 'Eircode',
             }
 
         self.fields['username'].widget.attrs['autofocus'] = True
         for field in self.fields:
             # Form customisation, adds * to required fields.
-            if self.fields[field].required:
-                placeholder = f'{placeholders[field]} *'
-            else:
-                placeholder = placeholders[field]
-            self.fields[field].widget.attrs['placeholder'] = placeholder
+            if field != 'country':
+                if self.fields[field].required:
+                    placeholder = f'{placeholders[field]} *'
+                else:
+                    placeholder = placeholders[field]
+                self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
             self.fields[field].label = False
