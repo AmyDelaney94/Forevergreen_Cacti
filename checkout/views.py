@@ -119,8 +119,8 @@ def checkout(request):
                     'address_line1': profile.default_address_line1,
                     'address_line2': profile.default_address_line2,
                     'town_or_city': profile.default_town_or_city,
-                    'county': profile.default_county,
-                    'eircode': profile.default_eircode,
+                    'state': profile.default_county,
+                    'postal_code': profile.default_eircode,
                     'country': profile.default_country,
                 })
             except UserProfile.DoesNotExist:

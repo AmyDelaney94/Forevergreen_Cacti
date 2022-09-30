@@ -181,7 +181,8 @@ Given more time to work on this project the overall scope of the website could b
 | Bug | Appearance | Solution |
 | --- | --- | --- | 
 | Stripe API error | <img src="static/readme_media/stripeapi.png" alt="error screen"> | - Updated my env.py file with the correct syntax. |
-| Checkout error | <img src="static/readme_media/country.png" alt="missing country element"> | - To fix this issue I went back and updated the profile and checkout models to have a country field by installing django_countries. <br/> - From there I |
+| Checkout error | <img src="static/readme_media/country.png" alt="missing country element"> | - To fix this issue I went back and updated the profile and checkout models to have a country field by installing django_countries. <br/> - From there I updated the fields in my stripe_elements.js page which resolved the error. |
+| Messages appearance | | - |
 
 
 <!-- TOC --><a name="unfixed-bug"></a>
@@ -229,7 +230,7 @@ Heroku was used to deploy the site and it was achieved by following the steps be
 
 <!-- TOC --><a name="references"></a>
 ### References:
-- <a href="https://creativecommons.org/licenses/by/4.0/"> Creative Commons</a> was used as a source for the favicon image used in this project. 
+- <a href="https://favicon.io/emoji-favicons/cactus/"> Favicon.io</a> was used as a source for the favicon image used in this project. 
 - <a href="https://lucid.app/documents#/documents?folder_id=home" alt="Link to lucid charts site">Lucid Charts</a>
 - <a href="https://stackoverflow.com/questions/53067186/how-to-use-slugs-in-django-url" alt="Link to stack overflow site">Stack Overflow</a> -> Using Slugs in Django
 - <a href="https://www.w3schools.com/bootstrap5/bootstrap_cards.php">W3Schools</a> -> Using cards in Bootstrap 5. 

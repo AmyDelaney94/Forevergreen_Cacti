@@ -28,10 +28,11 @@ class UserProfileForm(forms.ModelForm):
         self.fields['default_mobile'].widget.attrs['autofocus'] = True
         for field in self.fields:
             # Form customisation, adds * to required fields.
-            if self.fields[field].required:
-                placeholder = f'{placeholders[field]} *'
-            else:
-                placeholder = placeholders[field]
-            self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'rounded-0 profile-form-input'
-            self.fields[field].label = False
+            if field != 'default_country':
+                if self.fields[field].required:
+                    placeholder = f'{placeholders[field]} *'
+                else:
+                    placeholder = placeholders[field]
+                self.fields[field].widget.attrs['placeholder'] = placeholder
+                self.fields[field].widget.attrs['class'] = 'rounded-0 profile-form-input'
+                self.fields[field].label = False
