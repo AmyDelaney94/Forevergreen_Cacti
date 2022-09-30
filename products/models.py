@@ -1,5 +1,6 @@
 ''' Adding Imports to beggining of file '''
 from django.db import models
+from django.contrib.auth.models import User
 
 
 class Category(models.Model):
@@ -49,3 +50,20 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Review(models.Model):
+    """ Model for User Reviews """
+    product = models.ForeignKey(Product, on_delete=models.CASCADE,
+                                related_name='reviews')
+    name = models.ForeignKey(User, on_delete=models.CASCADE,
+                             related_name='reviewer')
+    your_review = models.TextField()
+    date_posted = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        """ Ordering reviews from old to new """
+        ordering = ["date_posted"]
+
+    def __str__(self):
+        return f"Review {self.your_review} by {self.name}"

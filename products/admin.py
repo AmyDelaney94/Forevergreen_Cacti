@@ -1,6 +1,7 @@
 ''' Adding Imports to beggining of file '''
 from django.contrib import admin
-from .models import Category, Product
+from django_summernote.admin import SummernoteModelAdmin
+from .models import Category, Product, Review
 
 # Register your models here.
 
@@ -26,5 +27,13 @@ class CategoryAdmin(admin.ModelAdmin):
     )
 
 
+class ReviewAdmin(admin.ModelAdmin):
+    """Class to display reviews on admin site"""
+    list_display = ('name', 'your_review', 'product', 'date_posted')
+    list_filter = ('date_posted', 'name')
+    search_fields = ('name', 'your_review')
+
+
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
+admin.site.register(Review, ReviewAdmin)

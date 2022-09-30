@@ -1,0 +1,29 @@
+{%  extends "base.html"  %}
+
+{%  block content  %}
+
+<!-- Delete Review Confirm -->
+<div class="container mt-5 d-flex justify-content-center">
+    <div class="row justify-content-md-center">
+        <div class="col-md-12">
+            <form method="POST">
+                {%  csrf_token  %}
+                <fieldset class="form-group d-flex justify-content-center">
+                    <legend class="mb-4">
+                        <h2>Delete Review</h2>
+                        <h4>Do you want to delete your review posted on:  <em>{{  review.date_posted  }}</em>?</h4>
+                    </legend>
+                </fieldset>
+                <div class="form-group d-flex justify-content-around">
+                    <!-- Delete Review -->
+                    <button class="btn btn-danger btn-lg mt-4" type="submit">Delete</button>
+                    <!-- Cancel Delete Review & Return back to previous page where review was listed -->
+                    <a class="btn btn-primary btn-lg mt-4" href="{{request.META.HTTP_REFERER}}">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{%  endblock content  %}

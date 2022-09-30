@@ -2,8 +2,17 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.urls import reverse_lazy
 from django.db.models.functions import Lower
-from .models import Product, Category
+from django.views.generic import (
+    UpdateView,
+    DeleteView
+)
+from django.core.paginator import Paginator
+from .models import Product, Category, Review
+from .forms import ReviewForm
+
 
 # Create your views here.
 
@@ -61,6 +70,63 @@ def all_products(request):
     }
 
     return render(request, 'products/products.html', context)
+
+
+class ReviewUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    """ Class to allow logged in users to update their reviews """
+    model = Review
+    form_class = ReviewForm
+
+    def form_valid(self, form):
+        """
+        Function to set signed in user
+        as author of the review form to post
+        """
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+
+    def test_func(self):
+        """
+        To set test_func to ensure only the author of the review can update it
+        and show 403 forbidden if url entered by another user
+        """
+        review = self.get_object()
+        if self.request.user == review.name:
+            return True
+        return False
+
+    def get_success_url(self):
+        """ On successful review update, return to product_detail view"""
+        product = self.object.product
+        messages.success(
+                self.request, 'Your Review Was Successfully Updated'
+                )
+        return reverse_lazy('product_detail', kwargs={'pk': product_id.pk})
+
+
+class ReviewDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """
+    Allow author to delete review.
+    """
+    model = Review
+
+    def test_func(self):
+        """
+        To set test_func to ensure only the author of the review can delete it
+        and show 403 forbidden if url entered by another user
+        """
+        review = self.get_object()
+        if self.request.user == review.name:
+            return True
+        return False
+
+    def get_success_url(self):
+        """ On successful review deletion, stay on same page"""
+        product = self.object.product
+        messages.success(
+                self.request, 'Your Review Was Successfully Deleted'
+                )
+        return reverse_lazy('product_detail', kwargs={'pk': product_id.pk})
 
 
 def product_detail(request, product_id):

@@ -1,0 +1,27 @@
+{%  extends "base.html"  %}
+{%  load crispy_forms_tags  %}
+{%  block content  %}
+
+<main>
+    <!-- Review Form to Update -->
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-8">
+                <form method="POST">
+                    {%  csrf_token  %}
+                    <fieldset class="form-group">
+                        <legend class="mb-4">
+                            <h1>Update Your Review</h1>
+                        </legend>
+                        {{  form | crispy  }}
+                    </fieldset>
+                    <div class="form-group d-flex justify-content-end">
+                        <button class="btn btn-primary btn-lg mt-4 mb-5" type="submit">Update Review</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+{%  endblock content  %}
