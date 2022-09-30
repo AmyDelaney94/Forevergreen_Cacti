@@ -65,8 +65,8 @@
                     <p class="my-0">Grand Total:</p>
                 </div>
                 <div class="col-3">
-                    <p class="my-0">${{ total | floatformat:2 }}</p>
-                    <p class="my-0">${{ delivery | floatformat:2 }}</p>
+                    <p class="my-0">€{{ total | floatformat:2 }}</p>
+                    <p class="my-0">€{{ delivery | floatformat:2 }}</p>
                     <p class="my-0"><strong>€{{ grand_total | floatformat:2 }}</strong></p>
                 </div>
             </div>
@@ -88,6 +88,7 @@
                     {{ order_form.town_or_city | as_crispy_field }}
                     {{ order_form.eircode | as_crispy_field }}
                     {{ order_form.county | as_crispy_field }}
+                    {{ order_form.country | as_crispy_field }}
                     <div class="form-check form-check-inline float-right mr-0">
                         <!-- Check if user is authenticated -->
                         {% if user.is_authenticated %}

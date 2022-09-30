@@ -3,6 +3,7 @@ import uuid
 from django.db import models
 from django.db.models import Sum
 from django.conf import settings
+from django_countries.fields import CountryField
 from products.models import Product
 from profiles.models import UserProfile
 
@@ -24,6 +25,7 @@ class Order(models.Model):
     town_or_city = models.CharField(max_length=40, null=False, blank=False)
     county = models.CharField(max_length=16, null=True, blank=True)
     eircode = models.CharField(max_length=8, null=True, blank=True)
+    country = CountryField(blank_label='Country *', null=False, blank=False)
     total = models.DecimalField(
         max_digits=10, decimal_places=2, null=False, default=0
         )

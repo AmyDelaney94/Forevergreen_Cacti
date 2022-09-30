@@ -26,7 +26,7 @@ class OrderAdmin(admin.ModelAdmin):
     fields = ('order_number', 'user_profile', 'date', 'username',
               'email', 'mobile', 'address_line1',
               'address_line2', 'town_or_city', 'county',
-              'eircode', 'total', 'delivery_cost', 'grand_total',
+              'eircode', 'country', 'total', 'delivery_cost', 'grand_total',
               'original_cart', 'stripe_pid')
 
     list_display = ('order_number', 'date', 'username',

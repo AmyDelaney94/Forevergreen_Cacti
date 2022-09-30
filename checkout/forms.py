@@ -9,7 +9,7 @@ class OrderForm(forms.ModelForm):
         ''''Fields being populated from Order Model'''
         model = Order
         fields = ('username', 'email', 'mobile', 'address_line1',
-                  'address_line2', 'town_or_city', 'county',
+                  'address_line2', 'town_or_city', 'county', 'country',
                   'eircode')
 
     def __init__(self, *args, **kwargs):
@@ -26,6 +26,7 @@ class OrderForm(forms.ModelForm):
             'address_line2': 'Address Line 2',
             'town_or_city': 'Town or City',
             'county': 'County',
+            'country': 'Country',
             'eircode': 'Eircode',
             }
 
