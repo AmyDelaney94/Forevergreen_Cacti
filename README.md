@@ -107,6 +107,26 @@ The user stories mentioned above were used to ensure a positive UX was achieved.
 | Feature | Details | Example |
 | --- | --- | --- | 
 | Favicon | - The favicon image was selected to continue with the cactus theme of the site. <br/> - The favicon icon is visible in the browser tab and search engine history.<br/> - It adds a unique identifier to the site. | <img src="static/favicon/favicon.ico" alt="favicon image"> | 
+| Landing Page |  |  | 
+| Sign in Page |  |  |
+| Sign up Page |  |  |
+| About Us Page |  |  |
+| Shop Page |  |  |
+| My Profile |  |  |
+| Newsletter |  |  |
+| SHopping Cart |  |  |
+| Checkout |  |  |
+| Checkout Success Page |  |  |
+| Search Bar |  |  |
+| Main Navigation | | |
+| Secondary Navigation |  |  |
+| Footer |  |  |
+| Admin Panel |  |  |
+| Product Detail |  |  |
+| Product filters | - This feature allows the user to filter by Product Category </br> - Each product is assigned a tag that acts as an additional filter |  |
+| Stripe | - Secure Payments </br> -  |  |
+| Toasts |  |  |
+|  |  |  |
 
 
 <br/>

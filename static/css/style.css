@@ -214,6 +214,14 @@ ul.tips {
     margin: 5px;
 }
 
+/* Review Section */
+.form-group {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+
+
 
 /* Media Queries */
 /* Container on xl desktop screens */

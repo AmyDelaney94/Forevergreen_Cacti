@@ -6,7 +6,7 @@ from .models import Category, Product, Review
 # Register your models here.
 
 
-class ProductAdmin(admin.ModelAdmin):
+class ProductAdmin(SummernoteModelAdmin):
     '''Display of products section of admin site'''
     list_display = (
         'sku',
