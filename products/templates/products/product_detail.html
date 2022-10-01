@@ -107,7 +107,7 @@
                                         <div class="row d-flex flex-wrap justify-content-around mb-3">
                                             <!-- Review Form-->
                                             <div class="review-form col-12 col-md-6 col-lg-4">
-                                                <p>{{ review.form | crispy }} </p>
+                                                {{ review.your_review | crispy }}
                                             </div>
                                             <div class="review-form d-flex justify-content-center">
                                                 <button type="submit"
@@ -127,12 +127,12 @@
         <!-- Sign In to add Review & Return back to this page after login -->
         {%  else %}
         <section class="container d-flex justify-content-center">
-            <div class="review-login card ps-5 pe-5 mb-3 mt-5 shadow p-3 mb-5 bg-body rounded" style="width: 900px;">
+            <div class="review-login card ps-5 pe-5 mb-3 mt-5 shadow p-3 mb-5 bg-body rounded" style="width: 400px;">
                 <div class="content-item d-flex justify-content-center">
-                    <h3>Leave a Review</h3>
-                    <a class="btn btn-primary ms-3" href="{%  url 'account_login'  %}?next={{request.path}}"
+                    <a class="btn shopping-btn ms-3" href="{%  url 'account_login'  %}?next={{request.path}}"
                         aria-label="Go to Log In Page">Login
                     </a>
+                    <h3> to Leave a Review </h3>
                 </div>
             </div>
         </section>
