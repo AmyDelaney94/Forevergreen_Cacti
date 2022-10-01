@@ -9,14 +9,14 @@
             <div class="col-md-8">
                 <form method="POST">
                     {%  csrf_token  %}
-                    <fieldset class="form-group">
+                    <fieldset class="review-form">
                         <legend class="mb-4">
                             <h1>Update Your Review</h1>
                         </legend>
                         {{  form | crispy  }}
                     </fieldset>
-                    <div class="form-group d-flex justify-content-end">
-                        <button class="btn btn-main btn-lg mt-4 mb-5" type="submit">Update Review</button>
+                    <div class="review-form d-flex justify-content-center">
+                        <button class="btn shopping-btn btn-lg mt-4 mb-5" type="submit">Update Review</button>
                     </div>
                 </form>
             </div>

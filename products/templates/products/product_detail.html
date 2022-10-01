@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load crispy_forms_tags %}
 {% load static %}
 
 {% block page_header %}
@@ -67,12 +68,11 @@
                                 </div>
                             </div>
                             <!-- Reviews-->
-                            <p class="card-text list-inline-item p-2 mb-0"><small class="text-muted"><strong><i
-                                            class="fa-regular fa-comment"></i>
+                            <p class="card-text list-inline-item p-2 mb-0"><small class="text-muted"><strong>
+                                <i class="fa-regular fa-comment-dots"></i>
                                         Review{{ product.reviews|pluralize }}: </strong>
                                     <i>{{ product.reviews.count }}</i>
                                 </small></p>
-
                         </div>
 
                         <div class="col-12">
@@ -82,7 +82,9 @@
                                 </span>
                                 <span class="text-uppercase">Keep Shopping</span>
                             </a>
-                            <input type="submit" class="btn cart-btn rounded-0 text-uppercase mt-5" value="Add to Cart">
+                            <input type="submit" class="btn cart-btn rounded-0 text-uppercase mt-5" value="Add to Cart"> 
+                            <a href="{% url 'wishlist' product.id %}" class="btn shopping-btn rounded-0 text-uppercase mt-5" role="button" aria-disabled="true">Add to Wishlist</a>
+
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </div>
@@ -97,7 +99,7 @@
                     <div class="row">
                         <div class="col">
                             <div class="card mb-3 shadow p-2 mb-3 bg-body rounded">
-                                <form method="POST">
+                                <form method="POST" style="margin-top:1.5em;">
                                     {%  csrf_token  %}
                                     <div class="d-flex flex-wrap justify-content-between mb-3">
                                         <h3>{{  user.username  }}, Would you like to leave a review? </h3>
@@ -106,8 +108,11 @@
                                     <fieldset class="review-form">
                                         <div class="row d-flex flex-wrap justify-content-around mb-3">
                                             <!-- Review Form-->
-                                            <div class="review-form col-12 col-md-6 col-lg-4">
-                                                {{ review.your_review | crispy }}
+                                            <div class="review-form col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                                                {% csrf_token %}
+                                                {{review_form.as_p}}
+                                                <!-- {{ review.form.your_review | crispy }} -->
+                                                <!-- {% csrf_token %} -->
                                             </div>
                                             <div class="review-form d-flex justify-content-center">
                                                 <button type="submit"
@@ -203,7 +208,6 @@
         </section>
     </div>
 
-</div>
 </div>
 {% endblock %}
 

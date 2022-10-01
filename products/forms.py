@@ -24,6 +24,14 @@ class ProductForm(forms.ModelForm):
 
 class ReviewForm(forms.ModelForm):
     """Create a form for users to leave reviews on product page"""
+    your_review = forms.CharField(label="", widget=forms.Textarea(
+                                  attrs={
+                                    'class': 'review-form',
+                                    'placeholder': 'Comment here !',
+                                    'rows': 4,
+                                    'cols': 50
+                                    }))
+
     class Meta:
         """
         Selecting model and fields to display on the form

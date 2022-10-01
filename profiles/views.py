@@ -1,8 +1,9 @@
 ''' Loading imports at beginning of file '''
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, HttpResponseRedirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from checkout.models import Order
+from products.models import Product
 from .models import UserProfile
 from .forms import UserProfileForm
 
@@ -57,3 +58,14 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
+
+
+def add_to_wishlist(request, id):
+    """ View to add and remove products from Wishlist """
+    product = get_object_or_404(Product, id=id)
+    if product.user_wishlist.filter(id=request.user.id).exists():
+        print('this is working')
+        product.user_wishlist.remove(request.user)
+    else:
+        product.user_wishlist.add(request.user)
+    return HttpResponseRedirect(request.META["HTTP_REFERER"])
