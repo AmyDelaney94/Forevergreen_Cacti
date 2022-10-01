@@ -215,9 +215,10 @@ ul.tips {
 }
 
 /* Review Section */
-.form-group {
+.review-form {
     line-height: 1.6;
     margin-bottom: 10px;
+    border-color: #212529;
 }
 
 

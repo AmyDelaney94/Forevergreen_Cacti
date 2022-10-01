@@ -110,7 +110,7 @@ The user stories mentioned above were used to ensure a positive UX was achieved.
 | Landing Page |  |  | 
 | Sign in Page |  |  |
 | Sign up Page |  |  |
-| About Us Page |  |  |
+| About Us Page | - Aim and purpose of the page is displayed here. </br> - Tips for site navigation and log in benefits are also displayed here.</br> - Link to the homepage and signup page are also embedded in the text. |  |
 | Shop Page |  |  |
 | My Profile |  |  |
 | Newsletter |  |  |
@@ -118,16 +118,16 @@ The user stories mentioned above were used to ensure a positive UX was achieved.
 | Checkout |  |  |
 | Checkout Success Page |  |  |
 | Search Bar |  |  |
-| Main Navigation | | |
+| Main Navigation | - The navigation bar changes depending on user status, with one view if logged in and a second view if logged out. </br> - The nav bar is responsive on smaller screen sizes it changes to a button with a dropdown list.| |
 | Secondary Navigation |  |  |
 | Footer |  |  |
-| Admin Panel |  |  |
+| Admin Panel | - A superuser was created for this project to manage the administration section. - Admin users have more functionality than regular users and have full CRUD functionality over information such as users, posts and comments. </br> - Only approved admin users can access this section of the site. It is accessed by adding /admin to the URL home page and signing in or my selecting the link available from the My Profile tab in the navigation bar. |  |
 | Product Detail |  |  |
 | Product filters | - This feature allows the user to filter by Product Category </br> - Each product is assigned a tag that acts as an additional filter |  |
 | Stripe | - Secure Payments </br> -  |  |
 | Toasts |  |  |
-|  |  |  |
-
+| Pagination |  |  |
+| Review Feature | - If the author of a review is logged in they have the option to either edit or delete their review.</br> - The edit and delete buttons are the same colour theme as the rest of the site and redirect the user to the selected page.||
 
 <br/>
 
@@ -164,6 +164,7 @@ Given more time to work on this project the overall scope of the website could b
 | Other Resources | Font Awesome | Used for visual icons on the site to enhance UX | 
 | Other Resources |  | Used to choose the colour scheme for the site.
 | Other Resources | Am I Responsive? | Used to see responsive design throughout the process.
+| Other Resources | Django Summernote | Used to provide users with a more interactive text field.
 | GitHub | GitHub Projects | Used to visually track the progress of the project | 
 | GitHub | GitHub Issues | Used to create the user stories managed in GitHub Projects | 
 | Host | GitHub | To store the source code and ReadMe for the project | 

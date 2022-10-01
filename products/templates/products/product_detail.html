@@ -44,7 +44,7 @@
                     <div class="form-row">
                         <div class="col-12">
                             <p class="mt-3"><strong>Quantity:</strong></p>
-                            <div class="form-group w-50">
+                            <div class="review-form w-50">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <button class="decrement-qty btn btn-black rounded-0"
@@ -100,18 +100,18 @@
                                 <form method="POST">
                                     {%  csrf_token  %}
                                     <div class="d-flex flex-wrap justify-content-between mb-3">
-                                        <h3>Add Your Review As: {{  user.username  }}</h3>
+                                        <h3>{{  user.username  }}, Would you like to leave a review? </h3>
                                     </div>
                                     <!-- Add Review Form -->
-                                    <fieldset class="form-group">
+                                    <fieldset class="review-form">
                                         <div class="row d-flex flex-wrap justify-content-around mb-3">
                                             <!-- Review Form-->
-                                            <div class="form-group col-xs-12 col-sm-7 col-lg-8">
-                                                {{  review_form | crispy  }}
+                                            <div class="review-form col-12 col-md-6 col-lg-4">
+                                                <p>{{ review.form | crispy }} </p>
                                             </div>
-                                            <div class="form-group d-flex justify-content-end">
+                                            <div class="review-form d-flex justify-content-center">
                                                 <button type="submit"
-                                                    class="btn shopping-btn rounded-0 btn-sm mt-4">Submit A
+                                                    class="btn shopping-btn rounded-0 mt-5">Submit A
                                                     Review</button>
                                             </div>
                                         </div>
@@ -144,8 +144,8 @@
         <section class="container mt-3 mb-3 pt-3 reviews-section">
             <div class="card shadow p-3 m-3 bg-body rounded">
                 <!-- Total Number of Reviews-->
-                <h4><i class="fa-solid fa-comment"></i> Review{{ tour.reviews.count|pluralize }}:
-                    {{ tour.reviews.count }}
+                <h4><i class="fa-solid fa-comment"></i> Review{{ product.reviews.count|pluralize }}:
+                    {{ product.reviews.count }}
                 </h4>
                 {% for review in reviews %}
                 <div class="row pt-3">
@@ -158,15 +158,15 @@
                             <li><i class="fa-solid fa-calendar-days"></i> <i>{{  review.date_posted  }}</i></li>
                         </ul>
                         <div class="text-start ms-3">
-                            <p>{{ review.your_review | linebreaks  }}</p>
+                            {{review.your_review | linebreaks  }}
                         </div>
 
                         {%  if review.name == user  %}
                         <!-- Update Review if User is Author -->
-                        <a class="btn btn-primary btn-sm me-3" href="{%  url 'review-update' review.pk  %}"
+                        <a class="btn btn-primary btn-sm me-3" href="{%  url 'review-update' %}"
                             aria-label="Update Review">Update</a>
                         <!-- Delete Review if User is Author -->
-                        <a class="btn btn-danger btn-sm ms-3" href="{%  url 'review-delete' review.pk  %}"
+                        <a class="btn btn-danger btn-sm ms-3" href="{%  url 'review-delete' %}"
                             aria-label="Delete Review">Delete</a>
                         {%  endif  %}
                     </div>

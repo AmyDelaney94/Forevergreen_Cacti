@@ -23,7 +23,7 @@ class ProductForm(forms.ModelForm):
 
 
 class ReviewForm(forms.ModelForm):
-    """Create a form for users to leave reviews on tour page"""
+    """Create a form for users to leave reviews on product page"""
     class Meta:
         """
         Selecting model and fields to display on the form

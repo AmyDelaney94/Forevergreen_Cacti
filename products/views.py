@@ -101,7 +101,7 @@ class ReviewUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         messages.success(
                 self.request, 'Your Review Was Successfully Updated'
                 )
-        return reverse_lazy('product_detail', kwargs={'pk': product_id.pk})
+        return reverse_lazy('product_detail.html')
 
 
 class ReviewDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
@@ -126,7 +126,7 @@ class ReviewDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         messages.success(
                 self.request, 'Your Review Was Successfully Deleted'
                 )
-        return reverse_lazy('product_detail', kwargs={'pk': product_id.pk})
+        return reverse_lazy('product_detail.html')
 
 
 def product_detail(request, product_id):
