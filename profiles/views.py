@@ -60,6 +60,14 @@ def order_history(request, order_number):
     return render(request, template, context)
 
 
+@login_required
+def wishlist(request):
+    """ View for user Wishlist """
+    products = Product.objects.filter(user_wishlist=request.user)
+    return render(request, "profile/wishlist.html", {"wishlist": products})
+
+
+@login_required
 def add_to_wishlist(request, id):
     """ View to add and remove products from Wishlist """
     product = get_object_or_404(Product, id=id)

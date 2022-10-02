@@ -118,9 +118,9 @@
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                             <a href="{% url 'admin:index' %}" aria-label="Admin Site" class="dropdown-item">Admin Site</a>
-                            <a href="" class="dropdown-item">Store Management</a>
                             {% endif %}
                             <a href="{% url 'profile' %}" class="dropdown-item" aria-label="Profile">My Profile</a>
+                            <a href="{% url 'wishlist' %}" class="dropdown-item" aria-label="Wishlist">My Wishlist</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item" aria-label="Logout">Logout</a>
 
                             <!-- My Profile Drop-down menu if user is logged out -->
