@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.db.models import Q
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.urls import reverse_lazy
 from django.db.models.functions import Lower
@@ -70,6 +71,7 @@ def all_products(request):
     return render(request, "products/products.html", context)
 
 
+@login_required
 def product_detail(request, product_id):
     """ A view to show individual products when selected """
 
@@ -96,6 +98,12 @@ def product_detail(request, product_id):
 
         return HttpResponseRedirect(request.META["HTTP_REFERER"])
         # return render(request, "products/product_detail.html", context)
+
+    context = {
+            "product": product,
+            "review_form": rf,
+        }
+
     return render(request, "products/product_detail.html", context)
 
 
