@@ -10,3 +10,14 @@
 #profile-update-form input::placeholder {
     color: #aab7c4;
 }
+
+.card-img{
+    height: 150px;
+    width: 150px; 
+}
+
+.btn-wish {
+    background: #698467;
+    color: #edf3f2;
+    margin: 5px;
+}

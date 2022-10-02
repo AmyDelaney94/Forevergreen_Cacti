@@ -22,6 +22,7 @@
             <h2 class="logo-font mb-4">My Wishlist</h2>
             <hr>
         </div>
+        <div class="row">
         <div class="col">
             <div class="col-12 mx-auto">
                 <div>Manage your Wishlist</div>
@@ -34,11 +35,11 @@
                             <div class="image-container my-5">
                                 {% if product.image %}
                                 <a href="{{ product.image.url }}" target="_blank">
-                                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                    <img class="card-img img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                                 </a>
                                 {% else %}
                                 <a href="">
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                    <img class="card-img img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                 </a>
                                 {% endif %}
                             </div>
@@ -47,8 +48,9 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{product.name}}</h5>
                                 <p class="card-text">{{product.description}}</p>
+                                <p class="card-text">{{product.care}}</p>
                                 <p class="card-text"><small class="text-muted">{{product.price}}</small></p>
-                                <a type="button" class="btn btn-primary fw500 btn-sm"
+                                <a type="button" class="btn btn-wish"
                                     href="{% url 'wishlist' product.id %}">Remove from Wishlist</a>
                             </div>
                         </div>
@@ -59,6 +61,7 @@
                 <p class="card-text">No products have been added to your wishlist!</p>
                 {% endif %}
             </div>
+        </div>
         </div>
     </div>
 </div>
