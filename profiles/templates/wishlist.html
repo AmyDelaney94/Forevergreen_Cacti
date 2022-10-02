@@ -32,11 +32,9 @@
         <div class="col">
             <div class="col-12 mx-auto">
                 <div>Manage your Wishlist</div>
-                <hr />
-
+                <hr/>
                 {% if wishlist %}
                 {% for product in wishlist  %}
-
                 <div class="card mb-3 rounded-0">
                     <div class="row g-0">
                         <div class="col-md-2">
@@ -65,7 +63,7 @@
                 </div>
                 {% endfor %}
                 {% else %}
-                <p class="card-text">No products have been added to your wishlist yet!</p>
+                <p class="card-text">No products have been added to your wishlist!</p>
                 {% endif %}
             </div>
         </div>
