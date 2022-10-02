@@ -65,21 +65,25 @@ def order_history(request, order_number):
 @login_required
 def wishlist(request):
     """ View for user Wishlist """
-    products = Product.objects.filter(user_wishlist=request.user)
+    user = UserProfile.objects.get(user=request.user)
+
     return render(request,
-                  "profile/wishlist.html", {"view_wishlist": products})
+                  "profiles/wishlist.html", {"wishlist": user.product_wishlist})
 
 
 @login_required
 def add_to_wishlist(request, id):
     """ View to add and remove products from Wishlist """
     product = get_object_or_404(Product, id=id)
-    if product.user_wishlist.filter(id=request.user.id).exists():
-        product.user_wishlist.remove(request.user)
+
+    user = UserProfile.objects.get(user=request.user)
+
+    if user.product_wishlist.filter(id=product.id).exists():
+        user.product_wishlist.remove(product)
         messages.success(request, product.name +
                          " has been removed from your WishList")
     else:
-        product.user_wishlist.add(request.user)
+        user.product_wishlist.add(product)
         messages.success(request, "Added " + product.name +
                          " to your WishList")
     return HttpResponseRedirect(request.META["HTTP_REFERER"])

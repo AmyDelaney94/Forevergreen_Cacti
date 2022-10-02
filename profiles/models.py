@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from django_countries.fields import CountryField
+from products.models import Product
 
 
 class UserProfile(models.Model):
@@ -23,6 +24,8 @@ class UserProfile(models.Model):
     default_eircode = models.CharField(max_length=20, null=True, blank=True)
     default_country = CountryField(blank_label='Country',
                                    null=True, blank=True)
+    product_wishlist = models.ManyToManyField(Product, blank=True,
+                                              related_name="product_wishlist")
 
     def __str__(self):
         return self.user.username

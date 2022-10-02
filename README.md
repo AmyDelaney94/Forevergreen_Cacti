@@ -17,6 +17,7 @@ A link to the deployed website can be found <a href="#" alt="link to deployed he
     + [Goals](#goals)
     + [User Stories](#user-stories)
     + [Wireframe](#wireframe-1)
+    + [current Features](#current-features)
     + [Future Features](#future-features)
     + [Languages Used](#languages-used)
     + [Technology Used](#technology-used)

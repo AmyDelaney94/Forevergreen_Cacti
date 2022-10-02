@@ -1,7 +1,6 @@
 ''' Adding Imports to beggining of file '''
 from django.db import models
 from django.contrib.auth.models import User
-from profiles.models import UserProfile
 
 
 class Category(models.Model):
@@ -42,8 +41,6 @@ class Product(models.Model):
     image_url = models.URLField(max_length=1060, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
     date_added = models.DateTimeField(auto_now_add=True)
-    user_wishlist = models.ManyToManyField(UserProfile, blank=True,
-                                           related_name="user_wishlist")
 
     class Meta:
         """

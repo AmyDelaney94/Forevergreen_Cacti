@@ -101,7 +101,7 @@ def product_detail(request, product_id):
 
     context = {
             "product": product,
-            "review_form": rf,
+            "review_form": ReviewForm(),
         }
 
     return render(request, "products/product_detail.html", context)
