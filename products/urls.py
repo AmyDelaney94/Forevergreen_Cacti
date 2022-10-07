@@ -1,22 +1,22 @@
 ''' Adding Imports to beggining of file '''
 from django.urls import path
 from .views import (
-    ReviewDeleteView,
-    ReviewUpdateView,
+    DeleteReview,
+    UpdateReview,
 )
 from . import views
 
 urlpatterns = [
     path('', views.all_products, name='products'),
     path(
-        'reviews/<int:pk>/update/',
-        ReviewUpdateView.as_view(),
-        name='review-update'
+        'reviews/update/',
+        UpdateReview.as_view(),
+        name='UpdateReview'
         ),
     path(
-        'reviews/<int:pk>/delete/',
-        ReviewDeleteView.as_view(),
-        name='review-delete'
+        'reviews/delete/',
+        DeleteReview.as_view(),
+        name='DeleteReview'
         ),
     path('<product_id>', views.product_detail, name='product_detail'),
 ]

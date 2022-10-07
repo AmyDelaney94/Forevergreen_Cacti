@@ -168,10 +168,10 @@
 
                         {%  if review.name == user  %}
                         <!-- Update Review if User is Author -->
-                        <a class="btn btn-primary btn-sm me-3" href="{%  url 'review-update' %}"
+                        <a class="btn btn-primary btn-sm me-3" href="{%  url 'UpdateReview' %}"
                             aria-label="Update Review">Update</a>
                         <!-- Delete Review if User is Author -->
-                        <a class="btn btn-danger btn-sm ms-3" href="{%  url 'review-delete' %}"
+                        <a class="btn btn-danger btn-sm ms-3" href="{%  url 'DeleteReview' %}"
                             aria-label="Delete Review">Delete</a>
                         {%  endif  %}
                     </div>

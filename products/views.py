@@ -4,7 +4,7 @@ from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.db.models import Q
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+# from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.urls import reverse_lazy
 from django.db.models.functions import Lower
 from django.views.generic import UpdateView, DeleteView
@@ -76,24 +76,27 @@ def product_detail(request, product_id):
     """ A view to show individual products when selected """
 
     product = get_object_or_404(Product, pk=product_id)
+    review_form = ReviewForm()
+    reviews = Review.objects.filter(product=product)
 
     if request.method == "POST":
-        rf = ReviewForm(request.POST)
+        r_f = ReviewForm(request.POST)
         # create a view to see reviews
-        if rf.is_valid():
+        if r_f.is_valid():
             your_review = request.POST.get("your_review")
-            review = Review.objects.create(product=product,
-                                           name=request.user,
-                                           your_review=your_review)
-            review.save()
+            reviews = Review.objects.create(product=product,
+                                            name=request.user,
+                                            your_review=your_review)
+            reviews.save()
             return HttpResponseRedirect(request.META["HTTP_REFERER"])
-            # return redirect(review.get_absolute_url())
+
         else:
-            rf = ReviewForm()
+            r_f = ReviewForm()
 
         context = {
             "product": product,
-            "review_form": rf,
+            "review_form": r_f,
+            "reviews": reviews
         }
 
         return HttpResponseRedirect(request.META["HTTP_REFERER"])
@@ -102,61 +105,26 @@ def product_detail(request, product_id):
     context = {
             "product": product,
             "review_form": ReviewForm(),
+            "reviews": reviews
         }
 
     return render(request, "products/product_detail.html", context)
 
 
-class ReviewUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
-    """ Class to allow logged in users to update their reviews """
-
+class UpdateReview(UpdateView):
+    '''
+    View to update a review if user is logged in.
+    '''
     model = Review
-    form_class = ReviewForm
-
-    def form_valid(self, form):
-        """
-        Function to set signed in user
-        as author of the review form to post
-        """
-        form.instance.author = self.request.user
-        return super().form_valid(form)
-
-    def test_func(self):
-        """
-        To set test_func to ensure only the author of the review can update it
-        and show 403 forbidden if url entered by another user
-        """
-        review = self.get_object()
-        if self.request.user == review.name:
-            return True
-        return False
-
-    def get_success_url(self):
-        """ On successful review update, return to product_detail view"""
-        product = self.object.product
-        messages.success(self.request, "Your Review Was Successfully Updated")
-        return reverse_lazy("product_detail.html")
+    template_name = 'review_form.html'
+    form_class = ReviewForm()
+    success_url = "products/product_detail.html"
 
 
-class ReviewDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
-    """
-    Allow author to delete review.
-    """
-
+class DeleteReview(DeleteView):
+    '''
+    View to delete a review
+    '''
     model = Review
-
-    def test_func(self):
-        """
-        To set test_func to ensure only the author of the review can delete it
-        and show 403 forbidden if url entered by another user
-        """
-        review = self.get_object()
-        if self.request.user == review.name:
-            return True
-        return False
-
-    def get_success_url(self):
-        """ On successful review deletion, stay on same page"""
-        product = self.object.product
-        messages.success(self.request, "Your Review Was Successfully Deleted")
-        return reverse_lazy("product_detail.html")
+    template_name = 'products/review_delete.html'
+    success_url = reverse_lazy('home')

@@ -68,7 +68,8 @@ def wishlist(request):
     user = UserProfile.objects.get(user=request.user)
 
     return render(request,
-                  "profiles/wishlist.html", {"wishlist": user.product_wishlist})
+                  "profiles/wishlist.html",
+                  {"wishlist": user.product_wishlist})
 
 
 @login_required
