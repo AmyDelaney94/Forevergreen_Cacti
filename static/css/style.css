@@ -50,6 +50,11 @@ body {
     width: fit-content;
 }
 
+.form-style {
+    background-color: #698467 !important;
+    color: #f5f5f5;
+}
+
 /* Navbar */
 .navigation {
     background-color: #698467;
