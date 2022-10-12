@@ -3,6 +3,10 @@ html {
     height: 100%;
 }
 
+.base-header {
+    padding: 0%;
+}
+
 body {
     background-size: cover;
     background: #edf3f2;
@@ -223,10 +227,14 @@ ul.tips {
 .review-form {
     line-height: 1.6;
     margin-bottom: 10px;
-    border-color: #212529;
+    border-color: #698467;
 }
 
-
+/* Error Pages */
+.error-border {
+    border-color: #698467;
+    background-color: #edf3f2;
+}
 
 
 /* Media Queries */

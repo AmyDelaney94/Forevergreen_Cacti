@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+<!-- Custom Error 403 Page -->
+<section class="container d-flex justify-content-center mt-4">
+    <div class="form-style card text-center" style="width: 700px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 border error-border">
+                    <h1>403</h1>
+                    <h2>Sorry!</h2>
+                    <h2>You don't have permission to access this page</h2>
+                    <a class="btn btn-light mb4 mt-4" href="{% url 'store' %}" aria-label="Go to Home Page">Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{%  endblock content  %}
