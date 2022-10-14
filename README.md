@@ -129,6 +129,7 @@ The user stories mentioned above were used to ensure a positive UX was achieved.
 | Toasts |  |  |
 | Pagination |  |  |
 | Review Feature | - If the author of a review is logged in they have the option to either edit or delete their review.</br> - The edit and delete buttons are the same colour theme as the rest of the site and redirect the user to the selected page.||
+| Error Pages |- This feature was added to provide the site with customised error pages that are in theme with the main site. </br> - The error pages included were error 400 - bad request, error 403 - No permission to access content, error 404 - Page not found and error 500 - internal server error ||
 
 <br/>
 
@@ -204,7 +205,7 @@ Given more time to work on this project the overall scope of the website could b
 | --- | --- | --- | 
 | Stripe API error | <img src="static/readme_media/stripeapi.png" alt="error screen"> | - Updated my env.py file with the correct syntax. |
 | Checkout error | <img src="static/readme_media/country.png" alt="missing country element"> | - To fix this issue I went back and updated the profile and checkout models to have a country field by installing django_countries. <br/> - From there I updated the fields in my stripe_elements.js page which resolved the error. |
-| Messages appearance | | - |
+| Messages appearance |<img src="static/readme_media/toastsdisplay.png" alt="Incorrect toast display"> | - To fix this bug I went back through the code in toast_success.html and realised that there was an additional closing div tag in the code that prevented the toast from closing correctly when the X was selected by the user. | 
 
 
 <!-- TOC --><a name="unfixed-bug"></a>
