@@ -17,6 +17,9 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from .views import (
+    handler404, handler400, handler403, handler500
+)
 
 
 urlpatterns = [
@@ -30,3 +33,8 @@ urlpatterns = [
     path('newsletter/', include('newsletter.urls')),
     path('profile/', include('profiles.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+handler404 = 'forevergreen.views.handler404'
+handler400 = 'forevergreen.views.handler400'
+handler403 = 'forevergreen.views.handler403'
+handler500 = 'forevergreen.views.handler500'
