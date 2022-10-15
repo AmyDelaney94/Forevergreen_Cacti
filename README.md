@@ -108,26 +108,28 @@ The user stories mentioned above were used to ensure a positive UX was achieved.
 | Feature | Details | Example |
 | --- | --- | --- | 
 | Favicon | - The favicon image was selected to continue with the cactus theme of the site. <br/> - The favicon icon is visible in the browser tab and search engine history.<br/> - It adds a unique identifier to the site. | <img src="static/favicon/favicon.ico" alt="favicon image of a green cactus"> | 
-| Landing Page |  | <img src="static/readme_media/landing1.png" alt="First image of landing page showing categories of cacti available"> <img src="static/readme_media/landing2.png" alt="Second image of landing page showing categories of cacti available"> | 
-| Sign in Page |  |  |
-| Sign up Page |  |  |
-| About Us Page | - Aim and purpose of the page is displayed here. </br> - Tips for site navigation and log in benefits are also displayed here.</br> - Link to the homepage and signup page are also embedded in the text. |  |
+| Landing Page | - The landing page contains the header, navigation and footer <br/> - This page was designed to highlight the various categories of cacti available on the store to allow the user to easily navigate to the desired selection. <br/> - The landing page also provides the user with the option to navigate directly to the main products page | <img src="static/readme_media/landing1.png" alt="First image of landing page showing categories of cacti available"> <img src="static/readme_media/landing2.png" alt="Second image of landing page showing categories of cacti available"> | 
+| Sign in Page | The sign in page provides the user a sign in form requesting username or email and a password. | <img src="static/readme_media/signin.png" alt="Sign in page.">
+| Sign up Page | The sign up page provides the user a sign up form to create a user profile. | <img src="static/readme_media/registration.png" alt="Registration form page."> |
+| Logout Confirmation Page | The user is asked to verify if they are sure they wish to log out. | <img src="static/readme_media/signoutpage.png" alt="Confirmation of logout decision"> |
+| About Us Page | - Aim and purpose of the page is displayed here. </br> - Tips for site navigation and log in benefits are also displayed here.</br> - Link to the homepage and signup page are also embedded in the text. | <img src="static/readme_media/aboutforevergreen.png" alt="A page dedicated to forevergreen cacti and why the store exists"> |
 | Shop Page |  |  |
 | My Profile |  |  |
-| Newsletter |  |  |
-| SHopping Cart |  |  |
+| Wishlist |  |  |
+| Newsletter | - The newsletter option allows users to subscribe to the newsletter and prevents them from subscribing multiple times. | <img src="static/readme_media/newsletter.png" alt="The option to subscribe to the stores newsletter"> |
+| Shopping Cart |  |  |
 | Checkout |  |  |
 | Checkout Success Page |  |  |
 | Search Bar |  |  |
-| Main Navigation | - The navigation bar changes depending on user status, with one view if logged in and a second view if logged out. </br> - The nav bar is responsive on smaller screen sizes it changes to a button with a dropdown list.| |
-| Secondary Navigation |  |  |
-| Footer |  |  |
-| Admin Panel | - A superuser was created for this project to manage the administration section. - Admin users have more functionality than regular users and have full CRUD functionality over information such as users, posts and comments. </br> - Only approved admin users can access this section of the site. It is accessed by adding /admin to the URL home page and signing in or my selecting the link available from the My Profile tab in the navigation bar. |  |
-| Product Detail |  |  |
-| Product filters | - This feature allows the user to filter by Product Category </br> - Each product is assigned a tag that acts as an additional filter |  |
+| Main Navigation | - The navigation bar options change depending on user status, with one view available if logged in and a second view if logged out. </br> The main navigation bar also features a search bar. | <img src="static/readme_media/mainnav.png" alt="Image of the main navigation bar."> |
+| Secondary Navigation | - This secondary navigation bar has four options available each with a number of options to assist the user in filtering their choice. </br> - The nav bar is responsive on smaller screen sizes it changes to a toggle with a dropdown list. | <img src="static/readme_media/nav.png" alt="Image of the secondary navigation bar."> |
+| Footer | - The footer contains the newsletter signup option, social media links and the site details. | <img src="static/readme_media/footer.png" alt="Image of the footer containing naviagtion and social media links."> |
+| Admin Panel | - A superuser was created for this project to manage the administration section. - Admin users have more functionality than regular users and have full CRUD functionality over information such as users, posts and comments. </br> - Only approved admin users can access this section of the site. It is accessed by adding /admin to the URL home page and signing in or my selecting the link available from the My Profile tab in the navigation bar. | <img src="static/readme_media/adminpanel.png" alt="Snip of the admin panel."> <img src="static/readme_media/adminlink.png" alt="Snip of the admin panel link."> |
+| Product Detail | - The product details page contains an image of the product, the name, description and care tips, and the cost. </br> - It also shows the number of reviews on the page, an option for logged in users to leave a review and a summary of any reviews left on the page. | <img src="static/readme_media/productdetail.png" alt="An example of the product detail page that shows image and summary of the product."> <img src="static/readme_media/productdetail2.png" alt="An example of the product detail page that shows review section of the page."> |
+| Product filters | - This feature allows the user to filter by Product Category </br> - Each product is assigned a tag that acts as an additional filter </br> - The individual categories can also be filtered A-Z and by cost etc. | <img src="static/readme_media/nav.png" alt="Image of the secondary navigation bar."> <img src="static/readme_media/filter.png" alt="Image of the additional filter options available to users."> |
 | Stripe | - Secure Payments </br> -  |  |
-| Toasts |  |  |
-| Review Feature | - If the author of a review is logged in they have the option to either edit or delete their review.</br> - The edit and delete buttons are the same colour theme as the rest of the site and redirect the user to the selected page.||
+| Toasts | - Toasts are used to communicate notifications to the user, examples include logging in and out and adding items to the shopping cart. | <img src="static/readme_media/successtoast.png" alt="Image of the toast that appears on the top right hand side of screen."> |
+| Review Feature | - If the author of a review is logged in they have the option to either edit or delete their review.</br> - The edit and delete buttons are the same colour theme as the rest of the site and redirect the user to the selected page.| <img src="static/readme_media/reviewedits.png" alt="Clip of the edit and delete options for the reviews."> <img src="static/readme_media/productdetail2.png" alt="An example of the product detail page that shows review section of the page."> |
 | Error Pages |- This feature was added to provide the site with customised error pages that are in theme with the main site. </br> - The error pages included were error 400 - bad request, error 403 - No permission to access content, error 404 - Page not found and error 500 - internal server error ||
 
 <br/>
