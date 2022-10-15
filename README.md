@@ -258,9 +258,18 @@ Heroku was used to deploy the site and it was achieved by following the steps be
 - <a href="https://stackoverflow.com/questions/53067186/how-to-use-slugs-in-django-url" alt="Link to stack overflow site">Stack Overflow</a> -> Using Slugs in Django
 - <a href="https://www.w3schools.com/bootstrap5/bootstrap_cards.php">W3Schools</a> -> Using cards in Bootstrap 5. 
 - <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" alt="Bootstrap Documentation">Bootstrap Documentation</a> -> For implementing bootstrap throughout the project
-- <a href="https://docs.djangoproject.com/en/3.2/ref/contrib/messages/#using-messages-in-views-and-templates" alt="Django Messages Information">Django Messages</a>
+- <a href="https://docs.djangoproject.com/en/3.2/ref/contrib/messages/#using-messages-in-views-and-templates" alt="Django Messages Information">Django Messages</a> -> This site was also used for views and URL configurations.
 - <a href="https://django-allauth.readthedocs.io/en/latest/" alt="Allauth Documentation">AllAuth Documentation</a>
 - <a href="https://www.youtube.com/c/TheNetNinja" alt="net ninja django tutorials">NetNinja Django Tutorials</a>
+- <a href="https://s3.console.aws.amazon.com" alt="Amazon AWS including s3">AWS</a> -> for static files and media storage.
+- <a href="https://dashboard.stripe.com" alt="Stripe for control of payments">Stripe</a>
+- <a href="https://www.succulentsandsunshine.com/" alt="Succulents and Sunshine website link">Succulents and Sunshine</a> -> For information on care tips for cacti and succulents. 
+- <a href="https://mountaincrestgardens.com" alt="Mountain Crest Gardens website">Mountain Crest Gardens</a> -> For details on different species of cacti.
+- <a href="https://docs.python.org" alt="Python documentation website">Python</a> -> used for examples for exceptions and how to resolve linting errors. 
+- <a href="https://fontawesome.com/" alt="Font Awesome webiste link">Font Awesome</a>
+
+
+
 
 <br/>
 
