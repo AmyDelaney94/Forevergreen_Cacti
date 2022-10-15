@@ -113,14 +113,14 @@ The user stories mentioned above were used to ensure a positive UX was achieved.
 | Sign up Page | The sign up page provides the user a sign up form to create a user profile. | <img src="static/readme_media/registration.png" alt="Registration form page."> |
 | Logout Confirmation Page | The user is asked to verify if they are sure they wish to log out. | <img src="static/readme_media/signoutpage.png" alt="Confirmation of logout decision"> |
 | About Us Page | - Aim and purpose of the page is displayed here. </br> - Tips for site navigation and log in benefits are also displayed here.</br> - Link to the homepage and signup page are also embedded in the text. | <img src="static/readme_media/aboutforevergreen.png" alt="A page dedicated to forevergreen cacti and why the store exists"> |
-| Shop Page |  |  |
+| Shop Page | - The shop page shows all products available to the user and can be filtered by category, cost and A-Z etc. | <img src="static/readme_media/shop.png" alt="The shop page shows all products available to the user."> |
 | My Profile |  |  |
-| Wishlist |  |  |
+| Wishlist | - The wishlist allows the user to save products in a list that is accessed in the profile menu. | <img src="static/readme_media/wishlist.png" alt="The layout of the wishlist"> |
 | Newsletter | - The newsletter option allows users to subscribe to the newsletter and prevents them from subscribing multiple times. | <img src="static/readme_media/newsletter.png" alt="The option to subscribe to the stores newsletter"> |
-| Shopping Cart |  |  |
+| Shopping Cart | - The shopping cart display contains the image, product name, quantity and total cost to the user. | <img src="static/readme_media/cart.png" alt="The shopping cart display with image, quantity and total cost"> |
 | Checkout |  |  |
 | Checkout Success Page |  |  |
-| Search Bar |  |  |
+| Search Bar | - The search bar allows users to search for products on the site. | <img src="static/readme_media/search.png" alt="Search bar on navigation bar">  |
 | Main Navigation | - The navigation bar options change depending on user status, with one view available if logged in and a second view if logged out. </br> The main navigation bar also features a search bar. | <img src="static/readme_media/mainnav.png" alt="Image of the main navigation bar."> |
 | Secondary Navigation | - This secondary navigation bar has four options available each with a number of options to assist the user in filtering their choice. </br> - The nav bar is responsive on smaller screen sizes it changes to a toggle with a dropdown list. | <img src="static/readme_media/nav.png" alt="Image of the secondary navigation bar."> |
 | Footer | - The footer contains the newsletter signup option, social media links and the site details. | <img src="static/readme_media/footer.png" alt="Image of the footer containing naviagtion and social media links."> |
@@ -167,7 +167,7 @@ Given more time to work on this project the overall scope of the website could b
 | Other Resources | Balsamiq Wireframes| Chosen to design wireframes during project planning | 
 | Other Resources | LucidCharts |  Used to create models used in the project | 
 | Other Resources | Font Awesome | Used for visual icons on the site to enhance UX | 
-| Other Resources |  | Used to choose the colour scheme for the site.
+| Other Resources | Coolors | Used to choose the colour scheme for the site.
 | Other Resources | Am I Responsive? | Used to see responsive design throughout the process.
 | Other Resources | Django Summernote | Used to provide users with a more interactive text field.
 | GitHub | GitHub Projects | Used to visually track the progress of the project | 
