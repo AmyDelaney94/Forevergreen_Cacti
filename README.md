@@ -118,7 +118,7 @@ The user stories mentioned above were used to ensure a positive UX was achieved.
 | Wishlist | - The wishlist allows the user to save products in a list that is accessed in the profile menu. | <img src="static/readme_media/wishlist.png" alt="The layout of the wishlist"> |
 | Newsletter | - The newsletter option allows users to subscribe to the newsletter and prevents them from subscribing multiple times. | <img src="static/readme_media/newsletter.png" alt="The option to subscribe to the stores newsletter"> |
 | Shopping Cart | - The shopping cart display contains the image, product name, quantity and total cost to the user. | <img src="static/readme_media/cart.png" alt="The shopping cart display with image, quantity and total cost"> |
-| Checkout |  |  |
+| Checkout | The checkout page is a section of the site that requests the users shipping and payment details. It also provides a summary of the products being purchased by the user. | <img src="static/readme_media/checkout.png" alt="Checkout page displays order summary and shipping details for the user"> |
 | Checkout Success Page |  |  |
 | Search Bar | - The search bar allows users to search for products on the site. | <img src="static/readme_media/search.png" alt="Search bar on navigation bar">  |
 | Main Navigation | - The navigation bar options change depending on user status, with one view available if logged in and a second view if logged out. </br> The main navigation bar also features a search bar. | <img src="static/readme_media/mainnav.png" alt="Image of the main navigation bar."> |
