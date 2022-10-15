@@ -9,12 +9,12 @@ from . import views
 urlpatterns = [
     path('', views.all_products, name='products'),
     path(
-        'reviews/update/',
+        'reviews/<int:pk>/update/',
         UpdateReview.as_view(),
-        name='UpdateReview'
+        name='review-update'
         ),
     path(
-        'reviews/delete/',
+        'reviews/<int:pk>/delete/',
         DeleteReview.as_view(),
         name='DeleteReview'
         ),

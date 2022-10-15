@@ -107,8 +107,8 @@ The user stories mentioned above were used to ensure a positive UX was achieved.
 
 | Feature | Details | Example |
 | --- | --- | --- | 
-| Favicon | - The favicon image was selected to continue with the cactus theme of the site. <br/> - The favicon icon is visible in the browser tab and search engine history.<br/> - It adds a unique identifier to the site. | <img src="static/favicon/favicon.ico" alt="favicon image"> | 
-| Landing Page |  |  | 
+| Favicon | - The favicon image was selected to continue with the cactus theme of the site. <br/> - The favicon icon is visible in the browser tab and search engine history.<br/> - It adds a unique identifier to the site. | <img src="static/favicon/favicon.ico" alt="favicon image of a green cactus"> | 
+| Landing Page |  | <img src="static/readme_media/landing1.png" alt="First image of landing page showing categories of cacti available"> <img src="static/readme_media/landing2.png" alt="Second image of landing page showing categories of cacti available"> | 
 | Sign in Page |  |  |
 | Sign up Page |  |  |
 | About Us Page | - Aim and purpose of the page is displayed here. </br> - Tips for site navigation and log in benefits are also displayed here.</br> - Link to the homepage and signup page are also embedded in the text. |  |
@@ -127,7 +127,6 @@ The user stories mentioned above were used to ensure a positive UX was achieved.
 | Product filters | - This feature allows the user to filter by Product Category </br> - Each product is assigned a tag that acts as an additional filter |  |
 | Stripe | - Secure Payments </br> -  |  |
 | Toasts |  |  |
-| Pagination |  |  |
 | Review Feature | - If the author of a review is logged in they have the option to either edit or delete their review.</br> - The edit and delete buttons are the same colour theme as the rest of the site and redirect the user to the selected page.||
 | Error Pages |- This feature was added to provide the site with customised error pages that are in theme with the main site. </br> - The error pages included were error 400 - bad request, error 403 - No permission to access content, error 404 - Page not found and error 500 - internal server error ||
 
@@ -136,7 +135,9 @@ The user stories mentioned above were used to ensure a positive UX was achieved.
 <!-- TOC --><a name="future-features"></a>
 ### Future Features
 Given more time to work on this project the overall scope of the website could be expanded. 
--  
+-  I would redirect the user to the page of the review being updated instead of the main store page. 
+- I would provide the admin with access to update the product database from the store rather than navigating to the admin panel. 
+
 
 
 <br/>
