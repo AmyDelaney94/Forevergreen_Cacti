@@ -1,9 +1,16 @@
 <!-- TOC --><a name="forevergreen-cacti"></a>
 # Forevergreen Cacti
 
+### Overview of the Project.
+Forevergreen Cacti is a website for a fictitious online store that specalises in the selling of cacti and succulents. This site allows users to view, review and purchase products that are available to be shipped to them. While this is a fictisious site the logic and design can be used for multiple online stores that can take payements.
 
+This site alows users to search for a specific product or filter the available products by a number of categories such as height and prefered climate, they can read reviews, read the product descriptions and view care tips for each product, Users also have the opportunity to set up a profile where they can view their purchase history, save their contact information, and view their wishlist. In the footer of the site there is also the option to enter an email to subscribe to the newsletter.
 
-A link to the deployed website can be found <a href="#" alt="link to deployed heroku website">here</a>.
+Users can make online purchases either once they are logged in. Once payment is successful, the user is sent an email confirmation of their purchase and their order number which is unique to them.
+
+Site admin users can add, update and delete products from the admin site.
+
+A link to the deployed website can be found <a href="https://forevergreen-cacti.herokuapp.com/" alt="A link to deployed heroku website">here</a>.
 
 <img src="#" alt="image of project responsiveness on varying screen sizes">
 
