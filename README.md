@@ -47,21 +47,21 @@ A link to the deployed website can be found <a href="https://forevergreen-cacti.
 
 | Page | Wireframe |
 | --- | --- |
-| Landing Page |<img src="static/wireframes/landing.png" alt="image of Landing page on desktop view"> <img src="static/wireframes/landing_mobile.png" alt="image of Landing page on mobile view"> |
-| About Page |<img src="static/wireframes/about.png" alt="image of about us page on desktop view"> <img src="static/wireframes/about_mobile.png" alt="image of About Us page on mobile view">|
-| Shopping Cart | <img src="static/wireframes/cart.png" alt="image of Shopping Cart page on desktop view"> <img src="static/wireframes/cart_mobile.png" alt="image of Shopping Cart page on mobile view"> |
-| Checkout Page |<img src="static/wireframes/payment.png" alt="image of Checkout page on desktop view"> <img src="static/wireframes/payment_mobile.png" alt="image of Checkout page on mobile view"> |
-| Product Description | <img src="static/wireframes/product_description.png" alt="image of product description page on desktop view"> |
-| Products Page | <img src="static/wireframes/products.png" alt="image of products page on desktop view"> <img src="static/wireframes/products_mobile.png" alt="image of products page on mobile view">| 
-| Profile Page |<img src="static/wireframes/profile.png" alt="image of User Profile page on desktop view"> <img src="static/wireframes/profile_mobile.png" alt="image of User Profile page on mobile view">|
-| Wishlist Page | <img src="static/wireframes/wishlist.png" alt="image of Wishlist page on desktop view"> <img src="static/wireframes/wishlist_mobile.png" alt="image of Wishlist page on mobile view"> |
+| Landing Page |<img src="media/wireframes/landing.png" alt="image of Landing page on desktop view"> <img src="media/wireframes/landing_mobile.png" alt="image of Landing page on mobile view"> |
+| About Page |<img src="media/wireframes/about.png" alt="image of about us page on desktop view"> <img src="media/wireframes/about_mobile.png" alt="image of About Us page on mobile view">|
+| Shopping Cart | <img src="media/wireframes/cart.png" alt="image of Shopping Cart page on desktop view"> <img src="media/wireframes/cart_mobile.png" alt="image of Shopping Cart page on mobile view"> |
+| Checkout Page |<img src="media/wireframes/payment.png" alt="image of Checkout page on desktop view"> <img src="media/wireframes/payment_mobile.png" alt="image of Checkout page on mobile view"> |
+| Product Description | <img src="media/wireframes/product_description.png" alt="image of product description page on desktop view"> |
+| Products Page | <img src="media/wireframes/products.png" alt="image of products page on desktop view"> <img src="media/wireframes/products_mobile.png" alt="image of products page on mobile view">| 
+| Profile Page |<img src="media/wireframes/profile.png" alt="image of User Profile page on desktop view"> <img src="media/wireframes/profile_mobile.png" alt="image of User Profile page on mobile view">|
+| Wishlist Page | <img src="media/wireframes/wishlist.png" alt="image of Wishlist page on desktop view"> <img src="media/wireframes/wishlist_mobile.png" alt="image of Wishlist page on mobile view"> |
 
 
 - <a href="https://www.lucidchart.com/" >Lucid Charts</a> was used to design the unique models used in this project.
 
 #### Colour Scheme
 - Colours were chosen using <a href="https://coolors.co/">Coolors</a>.
-<img src="static/readme_media/coloursforevergreen.png" alt="snip of colour theme chosen for this site.">
+<img src="media/readme_media/coloursforevergreen.png" alt="snip of colour theme chosen for this site.">
 
 <br/>
 
@@ -123,29 +123,30 @@ The user stories mentioned above were used to ensure a positive UX was achieved.
 | Feature | Details | Example |
 | --- | --- | --- | 
 | Favicon | - The favicon image was selected to continue with the cactus theme of the site. <br/> - The favicon icon is visible in the browser tab and search engine history.<br/> - It adds a unique identifier to the site. | <img src="static/favicon/favicon.ico" alt="favicon image of a green cactus"> | 
-| Landing Page | - The landing page contains the header, navigation and footer <br/> - This page was designed to highlight the various categories of cacti available on the store to allow the user to easily navigate to the desired selection. <br/> - The landing page also provides the user with the option to navigate directly to the main products page | <img src="static/readme_media/landing1.png" alt="First image of landing page showing categories of cacti available"> <img src="static/readme_media/landing2.png" alt="Second image of landing page showing categories of cacti available"> | 
-| Sign in Page | The sign in page provides the user a sign in form requesting username or email and a password. | <img src="static/readme_media/signin.png" alt="Sign in page.">
-| Sign up Page | The sign up page provides the user a sign up form to create a user profile. | <img src="static/readme_media/registration.png" alt="Registration form page."> |
-| Logout Confirmation Page | The user is asked to verify if they are sure they wish to log out. | <img src="static/readme_media/signoutpage.png" alt="Confirmation of logout decision"> |
-| About Us Page | - Aim and purpose of the page is displayed here. </br> - Tips for site navigation and log in benefits are also displayed here.</br> - Link to the homepage and signup page are also embedded in the text. | <img src="static/readme_media/aboutforevergreen.png" alt="A page dedicated to forevergreen cacti and why the store exists"> |
-| Shop Page | - The shop page shows all products available to the user and can be filtered by category, cost and A-Z etc. | <img src="static/readme_media/shop.png" alt="The shop page shows all products available to the user."> |
-| My Profile |  |  |
-| Wishlist | - The wishlist allows the user to save products in a list that is accessed in the profile menu. | <img src="static/readme_media/wishlist.png" alt="The layout of the wishlist"> |
-| Newsletter | - The newsletter option allows users to subscribe to the newsletter and prevents them from subscribing multiple times. | <img src="static/readme_media/newsletter.png" alt="The option to subscribe to the stores newsletter"> |
-| Shopping Cart | - The shopping cart display contains the image, product name, quantity and total cost to the user. | <img src="static/readme_media/cart.png" alt="The shopping cart display with image, quantity and total cost"> |
-| Checkout | The checkout page is a section of the site that requests the users shipping and payment details. It also provides a summary of the products being purchased by the user. | <img src="static/readme_media/checkout.png" alt="Checkout page displays order summary and shipping details for the user"> |
-| Checkout Success Page |  |  |
-| Search Bar | - The search bar allows users to search for products on the site. | <img src="static/readme_media/search.png" alt="Search bar on navigation bar">  |
-| Main Navigation | - The navigation bar options change depending on user status, with one view available if logged in and a second view if logged out. </br> The main navigation bar also features a search bar. | <img src="static/readme_media/mainnav.png" alt="Image of the main navigation bar."> |
-| Secondary Navigation | - This secondary navigation bar has four options available each with a number of options to assist the user in filtering their choice. </br> - The nav bar is responsive on smaller screen sizes it changes to a toggle with a dropdown list. | <img src="static/readme_media/nav.png" alt="Image of the secondary navigation bar."> |
-| Footer | - The footer contains the newsletter signup option, social media links and the site details. | <img src="static/readme_media/footer.png" alt="Image of the footer containing naviagtion and social media links."> |
-| Admin Panel | - A superuser was created for this project to manage the administration section. - Admin users have more functionality than regular users and have full CRUD functionality over information such as users, posts and comments. </br> - Only approved admin users can access this section of the site. It is accessed by adding /admin to the URL home page and signing in or my selecting the link available from the My Profile tab in the navigation bar. | <img src="static/readme_media/adminpanel.png" alt="Snip of the admin panel."> <img src="static/readme_media/adminlink.png" alt="Snip of the admin panel link."> |
-| Product Detail | - The product details page contains an image of the product, the name, description and care tips, and the cost. </br> - It also shows the number of reviews on the page, an option for logged in users to leave a review and a summary of any reviews left on the page. | <img src="static/readme_media/productdetail.png" alt="An example of the product detail page that shows image and summary of the product."> <img src="static/readme_media/productdetail2.png" alt="An example of the product detail page that shows review section of the page."> |
-| Product filters | - This feature allows the user to filter by Product Category </br> - Each product is assigned a tag that acts as an additional filter </br> - The individual categories can also be filtered A-Z and by cost etc. | <img src="static/readme_media/nav.png" alt="Image of the secondary navigation bar."> <img src="static/readme_media/filter.png" alt="Image of the additional filter options available to users."> |
+| Landing Page | - The landing page contains the header, navigation and footer <br/> - This page was designed to highlight the various categories of cacti available on the store to allow the user to easily navigate to the desired selection. <br/> - The landing page also provides the user with the option to navigate directly to the main products page | <img src="media/readme_media/landing1.png" alt="First image of landing page showing categories of cacti available"> <img src="media/readme_media/landing2.png" alt="Second image of landing page showing categories of cacti available"> | 
+| Sign in Page | The sign in page provides the user a sign in form requesting username or email and a password. | <img src="media/readme_media/signin.png" alt="Sign in page.">
+| Sign up Page | The sign up page provides the user a sign up form to create a user profile. | <img src="media/readme_media/registration.png" alt="Registration form page."> |
+| Logout Confirmation Page | The user is asked to verify if they are sure they wish to log out. | <img src="media/readme_media/signoutpage.png" alt="Confirmation of logout decision"> |
+| About Us Page | - Aim and purpose of the page is displayed here. </br> - Tips for site navigation and log in benefits are also displayed here.</br> - Link to the homepage and signup page are also embedded in the text. | <img src="media/readme_media/aboutforevergreen.png" alt="A page dedicated to forevergreen cacti and why the store exists"> |
+| Shop Page | - The shop page shows all products available to the user and can be filtered by category, cost and A-Z etc. | <img src="media/readme_media/shop.png" alt="The shop page shows all products available to the user."> |
+| My Profile | - The profile tab has various views depending on log in status and if the user is an admin. <br/> - The my profile page contains the order history of a user and their address details. | <img src="media/readme_media/profile.png" alt="An image of the user profile summary page."> |
+| Wishlist | - The wishlist allows the user to save products in a list that is accessed in the profile menu. | <img src="media/readme_media/wishlist.png" alt="The layout of the wishlist"> |
+| Newsletter | - The newsletter option allows users to subscribe to the newsletter and prevents them from subscribing multiple times. | <img src="media/readme_media/newsletter.png" alt="The option to subscribe to the stores newsletter"> |
+| Shopping Cart | - The shopping cart display contains the image, product name, quantity and total cost to the user. | <img src="media/readme_media/cart.png" alt="The shopping cart display with image, quantity and total cost"> |
+| Checkout | The checkout page is a section of the site that requests the users shipping and payment details. It also provides a summary of the products being purchased by the user. | <img src="media/readme_media/checkout.png" alt="Checkout page displays order summary and shipping details for the user"> |
+| Checkout Success Page | -This page provides the user with a summary of their order, the shipping details and overall cost. | <img src="media/readme_media/checkoutsuccess.png" alt="An image of the checkout success page."> |
+| Search Bar | - The search bar allows users to search for products on the site. | <img src="media/readme_media/search.png" alt="Search bar on navigation bar">  |
+| Main Navigation | - The navigation bar options change depending on user status, with one view available if logged in and a second view if logged out. </br> The main navigation bar also features a search bar. | <img src="media/readme_media/mainnav.png" alt="Image of the main navigation bar."> |
+| Secondary Navigation | - This secondary navigation bar has four options available each with a number of options to assist the user in filtering their choice. </br> - The nav bar is responsive on smaller screen sizes it changes to a toggle with a dropdown list. | <img src="media/readme_media/nav.png" alt="Image of the secondary navigation bar."> |
+| Footer | - The footer contains the newsletter signup option, social media links and the site details. | <img src="media/readme_media/footer.png" alt="Image of the footer containing naviagtion and social media links."> |
+| Admin Panel | - A superuser was created for this project to manage the administration section. - Admin users have more functionality than regular users and have full CRUD functionality over information such as users, posts and comments. </br> - Only approved admin users can access this section of the site. It is accessed by adding /admin to the URL home page and signing in or my selecting the link available from the My Profile tab in the navigation bar. | <img src="media/readme_media/adminpanel.png" alt="Snip of the admin panel."> <img src="media/readme_media/adminlink.png" alt="Snip of the admin panel link."> |
+| Product Detail | - The product details page contains an image of the product, the name, description and care tips, and the cost. </br> - It also shows the number of reviews on the page, an option for logged in users to leave a review and a summary of any reviews left on the page. | <img src="media/readme_media/productdetail.png" alt="An example of the product detail page that shows image and summary of the product."> <img src="media/readme_media/productdetail2.png" alt="An example of the product detail page that shows review section of the page."> |
+| Product filters | - This feature allows the user to filter by Product Category </br> - Each product is assigned a tag that acts as an additional filter </br> - The individual categories can also be filtered A-Z and by cost etc. | <img src="media/readme_media/nav.png" alt="Image of the secondary navigation bar."> <img src="media/readme_media/filter.png" alt="Image of the additional filter options available to users."> |
 | Stripe | - Secure Payments </br> -  |  |
-| Toasts | - Toasts are used to communicate notifications to the user, examples include logging in and out and adding items to the shopping cart. | <img src="static/readme_media/successtoast.png" alt="Image of the toast that appears on the top right hand side of screen."> |
-| Review Feature | - If the author of a review is logged in they have the option to either edit or delete their review.</br> - The edit and delete buttons are the same colour theme as the rest of the site and redirect the user to the selected page.| <img src="static/readme_media/reviewedits.png" alt="Clip of the edit and delete options for the reviews."> <img src="static/readme_media/productdetail2.png" alt="An example of the product detail page that shows review section of the page."> |
+| Toasts | - Toasts are used to communicate notifications to the user, examples include logging in and out and adding items to the shopping cart. | <img src="media/readme_media/successtoast.png" alt="Image of the toast that appears on the top right hand side of screen."> |
+| Review Feature | - If the author of a review is logged in they have the option to either edit or delete their review.</br> - The edit and delete buttons are the same colour theme as the rest of the site and redirect the user to the selected page.| <img src="media/readme_media/reviewedits.png" alt="Clip of the edit and delete options for the reviews."> <img src="media/readme_media/productdetail2.png" alt="An example of the product detail page that shows review section of the page."> |
 | Error Pages |- This feature was added to provide the site with customised error pages that are in theme with the main site. </br> - The error pages included were error 400 - bad request, error 403 - No permission to access content, error 404 - Page not found and error 500 - internal server error ||
+| Privacy Policy | - This feature was added in order to ensure that the site complies with GDPR. <br/> - There is a link for users in the footer that directs them to the policy.| <img src="media/readme_media/policy.png" alt="An example of the privacy policy generated specifically for this site."> |
 
 <br/>
 
@@ -244,7 +245,7 @@ The following details the Web Marketing strategies used for this project:
 - A potential disadvantage of this feature is that it could deemed as spam and the emailed Newsletter will not reach the user. 
 - Social media marketing was also chosen for this project as it ideal for small businesses that don’t have large budgets because it is free. It is hoped that this would build up a personal connection to the clients, build awareness and spread the brand name. A potential disadvantage of this marketing strategy is that social media marketing needs to be engaged with and updated on a regular and consistent basis and therefore can be time consuming. A mock Facebook WireFrame was created so draft the layout of the page that will be used for social media marketing.
 <br/>
-<img src="static/wireframes/facebookpage.png" alt="image of the facebook page mockup designed for marketing purposes">
+<img src="media/wireframes/facebookpage.png" alt="image of the facebook page mockup designed for marketing purposes">
 
 #### Business Model: 
 - Customers: Our target customers are millennials and above, singles and families who like cacti, and interior decoration and want to introduce a cactus or new plant to their indoor or outdoor home environment. 
@@ -269,9 +270,9 @@ The following details the Web Marketing strategies used for this project:
 #### Fixed Bugs:
 | Bug | Appearance | Solution |
 | --- | --- | --- | 
-| Stripe API error | <img src="static/readme_media/stripeapi.png" alt="error screen"> | - Updated my env.py file with the correct syntax. |
-| Checkout error | <img src="static/readme_media/country.png" alt="missing country element"> | - To fix this issue I went back and updated the profile and checkout models to have a country field by installing django_countries. <br/> - From there I updated the fields in my stripe_elements.js page which resolved the error. |
-| Messages appearance |<img src="static/readme_media/toastsdisplay.png" alt="Incorrect toast display"> | - To fix this bug I went back through the code in toast_success.html and realised that there was an additional closing div tag in the code that prevented the toast from closing correctly when the X was selected by the user. | 
+| Stripe API error | <img src="media/readme_media/stripeapi.png" alt="error screen"> | - Updated my env.py file with the correct syntax. |
+| Checkout error | <img src="media/readme_media/country.png" alt="missing country element"> | - To fix this issue I went back and updated the profile and checkout models to have a country field by installing django_countries. <br/> - From there I updated the fields in my stripe_elements.js page which resolved the error. |
+| Messages appearance |<img src="media/readme_media/toastsdisplay.png" alt="Incorrect toast display"> | - To fix this bug I went back through the code in toast_success.html and realised that there was an additional closing div tag in the code that prevented the toast from closing correctly when the X was selected by the user. | 
 
 
 <!-- TOC --><a name="unfixed-bug"></a>

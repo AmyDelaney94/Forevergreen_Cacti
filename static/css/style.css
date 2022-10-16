@@ -86,6 +86,9 @@ a.nav-link {
 .product-button {
     color: #edf3f2;
     background: #698467;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* width: 300px; */
 }
 
 .cat-img{
