@@ -5,7 +5,7 @@
 
 A link to the deployed website can be found <a href="#" alt="link to deployed heroku website">here</a>.
 
-<img src="media/readme-images/responsive.png" alt="image of project responsiveness on varying screen sizes">
+<img src="#" alt="image of project responsiveness on varying screen sizes">
 
 <!-- TOC --><a name="table-of-contents"></a>
 ## Table of Contents
@@ -39,9 +39,20 @@ A link to the deployed website can be found <a href="#" alt="link to deployed he
 
 | Page | Wireframe |
 | --- | --- |
+| Landing Page |<img src="static/wireframes/landing.png" alt="image of Landing page on desktop view"> <img src="static/wireframes/landing_mobile.png" alt="image of Landing page on mobile view"> |
+| About Page |<img src="static/wireframes/about.png" alt="image of about us page on desktop view"> <img src="static/wireframes/about_mobile.png" alt="image of About Us page on mobile view">|
+| Shopping Cart | <img src="static/wireframes/cart.png" alt="image of Shopping Cart page on desktop view"> <img src="static/wireframes/cart_mobile.png" alt="image of Shopping Cart page on mobile view"> |
+| Checkout Page |<img src="static/wireframes/payment.png" alt="image of Checkout page on desktop view"> <img src="static/wireframes/payment_mobile.png" alt="image of Checkout page on mobile view"> |
+| Product Description | <img src="static/wireframes/product_description.png" alt="image of product description page on desktop view"> |
+| Products Page | <img src="static/wireframes/products.png" alt="image of products page on desktop view"> <img src="static/wireframes/products_mobile.png" alt="image of products page on mobile view">| 
+| Profile Page |<img src="static/wireframes/profile.png" alt="image of User Profile page on desktop view"> <img src="static/wireframes/profile_mobile.png" alt="image of User Profile page on mobile view">|
+| Wishlist Page | <img src="static/wireframes/wishlist.png" alt="image of Wishlist page on desktop view"> <img src="static/wireframes/wishlist_mobile.png" alt="image of Wishlist page on mobile view"> |
+
 
 - <a href="https://www.lucidchart.com/" >Lucid Charts</a> was used to design the unique models used in this project.
 
+- <a href="https://coolors.co/">Coolors</a> was used to determine the colour theme for the site. 
+<img src="static/readme_media/coloursforevergreen.png" alt="snip of colour theme chosen for this site.">
 
 <br/>
 
