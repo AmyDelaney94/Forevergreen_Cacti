@@ -59,13 +59,9 @@ A link to the deployed website can be found <a href="https://forevergreen-cacti.
 
 - <a href="https://www.lucidchart.com/" >Lucid Charts</a> was used to design the unique models used in this project.
 
-- <a href="https://coolors.co/">Coolors</a> was used to determine the colour theme for the site. 
-<img src="static/readme_media/coloursforevergreen.png" alt="snip of colour theme chosen for this site.">
-
-<br/>
-
 #### Colour Scheme
-- Colours were chosen using 
+- Colours were chosen using <a href="https://coolors.co/">Coolors</a>.
+<img src="static/readme_media/coloursforevergreen.png" alt="snip of colour theme chosen for this site.">
 
 <br/>
 
@@ -169,6 +165,7 @@ Given more time to work on this project the overall scope of the website could b
 - JavaScript: Language chosen to run scripts in the project.
 - HTML: Markup language used to create the front end web pages.
 - CSS: Styling language used to add custom styling to site.
+
 <br/>
 
 <!-- TOC --><a name="technology-used"></a>
@@ -246,7 +243,8 @@ The following details the Web Marketing strategies used for this project:
 - Content marketing comes in many forms, including blog posts, videos, podcasts, webinars and newsletters. This site gives the users the option to subscribe to the sites Newsletter in an effort to attract new customers and also retain existing.For logged in customers we have made it easy to sign up for our newsletter, in order to keep them up to date on new product availabilities and care tips and tricks that they can share with their friends and family. As this is a new company, we will rely heavily on positive reviews and user experience that will add value to the company by attracting new and returning visitors to our homepage and a goal of resulting in more customers.
 - A potential disadvantage of this feature is that it could deemed as spam and the emailed Newsletter will not reach the user. 
 - Social media marketing was also chosen for this project as it ideal for small businesses that don’t have large budgets because it is free. It is hoped that this would build up a personal connection to the clients, build awareness and spread the brand name. A potential disadvantage of this marketing strategy is that social media marketing needs to be engaged with and updated on a regular and consistent basis and therefore can be time consuming. A mock Facebook WireFrame was created so draft the layout of the page that will be used for social media marketing.
-<img src="#" alt="Link to facebook page mockup">
+<br/>
+<img src="static/wireframes/facebookpage.png" alt="image of the facebook page mockup designed for marketing purposes">
 
 #### Business Model: 
 - Customers: Our target customers are millennials and above, singles and families who like cacti, and interior decoration and want to introduce a cactus or new plant to their indoor or outdoor home environment. 
