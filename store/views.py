@@ -14,3 +14,8 @@ def about(request):
     """ A view to return the about page """
 
     return render(request, 'about.html')
+
+
+def privacy(request):
+    """ A view to return privacy policy page """
+    return render(request, 'home/privacy.html')
