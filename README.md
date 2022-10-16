@@ -288,8 +288,7 @@ Heroku was used to deploy the site and it was achieved by following the steps be
 - <a href="https://mountaincrestgardens.com" alt="Mountain Crest Gardens website">Mountain Crest Gardens</a> -> For details on different species of cacti.
 - <a href="https://docs.python.org" alt="Python documentation website">Python</a> -> used for examples for exceptions and how to resolve linting errors. 
 - <a href="https://fontawesome.com/" alt="Font Awesome webiste link">Font Awesome</a>
-
-
+- <a href="https://stripe.com/docs/testing?numbers-or-method-or-token=card-numbers#visa" alt="Link to stripe payments testing page">Stripe payments testing</a> -> This page was used to test a number of card types on the store. 
 
 
 <br/>
