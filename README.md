@@ -30,6 +30,7 @@ A link to the deployed website can be found <a href="https://forevergreen-cacti.
     + [Technology Used](#technology-used)
     + [Testing](#testing)
       - [Validation Testing:](#validation-testing)
+    + [Web Marketing:](#web-marketing)
     + [Bugs:](#bugs)
       - [Fixed Bugs:](#fixed-bugs)
       - [Unfixed Bug:](#unfixed-bug)
@@ -213,6 +214,52 @@ Given more time to work on this project the overall scope of the website could b
 
 #### Lighthouse Testing
 - The site was also tested for its <a href="https://web.dev/performance-scoring/"> Lighthouse Performance Score </a>and the results were as follows.
+
+<br/>
+
+#### Security
+- All SECRET access keys are stored safely in env.py file to prevent unwanted connections to the database. 
+- Django’s setting DEBUG was set to False after development for deployment to prevent access to error screens revealing code or database entries.
+- Django allauth was used to set up user registration and Django’s LoginRequiredMixin and UserPassesTestMixin were used to ensure only signed in users and authors can edit and delete their own product reviews.
+- Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this site to prevent valid requests to the backend server being created for malicious purposes.
+
+<br/>
+
+<!-- TOC --><a name="web-marketing"></a>
+### Web Marketing: 
+#### Company description: 
+- Forevergreen Cacti is a B2C company that provides our customers with an online cacti store that specialises in rare and unique species. Additionally, we provide information on cacti descriptions and care tips and tricks for the various species. Web marketing is the process of marketing a business online, and it's a cost-effective way to reach people who are most interested in what a business has to offer.
+<br/>
+The following details the Web Marketing strategies used for this project:
+
+#### Site Engine Optimisation
+- An xml sitemap was created and added to the project's root directory. This is a file that lists the website’s important page URLs, making sure that search engines can crawl, or navigate, through them. It also helps search engines understand the website structure, so can help speed up content discovery.
+- The robots.txt file was also created and added to the projects root directory. This is a text file that prohibits search engines from accessing  certain areas of the website. It lists out any folders or files that will not be crawled or indexed by search engine spiders. The presence of the robots.txt file shows that the site acknowledges that search engines are allowed and that they may have free access to it. For this reason, search engines take the existence of this file as a sign of quality, and so positively impact the SEO ranking.
+- The final step for working with a sitemap and robots files can only be implemented for web applications that have a DNS certificate. As this is a fictitious website for project purposes only no further action will be taken.
+- Key words were researched to determine which were most important to the site’s potential customers. Keyword research is the process of finding and analysing search terms that people enter into search engines, with the goal of using that data for SEO or general web marketing. The metadata section along with HTML elements like headings, main, section, header, footer, the strong tags, and alt descriptions on images were all utilised to enter the identified key words for better SEO. Content Stuffing was avoided, and keywords were only utilised if they fit within the flow of the content.
+- An example of the keywords chosen for this project included cacti, cactus, succulent, rare cacti, gift ideas, variety of climates, cacti store, online cactus shop and interior design. 
+-	Rel attributes such as noopener and noreferrer were also used on any external links.
+-	Noopener is mandatory for any links that have the 'target="_blank"' attribute. This prevents the new page having any access to the tab/session that opened it, preventing common phishing attack vectors.
+-	Noreferrer is the older version of 'noopener' and does the same thing but prevents the site that is being linked to from knowing that you ever linked to it in the first place, so it looks to SEOs that it's a direct link to the site.
+
+#### Content Marketing
+- Content marketing comes in many forms, including blog posts, videos, podcasts, webinars and newsletters. This site gives the users the option to subscribe to the sites Newsletter in an effort to attract new customers and also retain existing.For logged in customers we have made it easy to sign up for our newsletter, in order to keep them up to date on new product availabilities and care tips and tricks that they can share with their friends and family. As this is a new company, we will rely heavily on positive reviews and user experience that will add value to the company by attracting new and returning visitors to our homepage and a goal of resulting in more customers.
+- A potential disadvantage of this feature is that it could deemed as spam and the emailed Newsletter will not reach the user. 
+- Social media marketing was also chosen for this project as it ideal for small businesses that don’t have large budgets because it is free. It is hoped that this would build up a personal connection to the clients, build awareness and spread the brand name. A potential disadvantage of this marketing strategy is that social media marketing needs to be engaged with and updated on a regular and consistent basis and therefore can be time consuming. A mock Facebook WireFrame was created so draft the layout of the page that will be used for social media marketing.
+<img src="#" alt="Link to facebook page mockup">
+
+#### Business Model: 
+- Customers: Our target customers are millennials and above, singles and families who like cacti, and interior decoration and want to introduce a cactus or new plant to their indoor or outdoor home environment. 
+- Competitors: We see that we have three types of competitors. There are companies that have the same interest and concept as Forevergreen Cacti. But they are mainly focusing on a wider range of cacti and succulents, while we have a smaller range of more unique products. The other type of competitors are bigger in person garden centres and have all kinds of products, but they supply both cacti and other plants such as Woodies or B&Q.  There are some companies that offer similar products to us such as stores on Etsy; however, they do not provide the information and care tips that support maximum growth for their products. 
+
+#### SWOT analysis
+| Strength | Weakness | 
+| --- | --- | 
+| -	Many categories of cacti available on the home page. <br/> -	Information for the customer that provides them with <br/> the description of the cacti appearances and<br/> flowering patterns. <br/> -	Information on tips for improving growth.| - New online brand <br/> - Small range of products |
+
+| Opportunities | Threats | 
+| --- | --- |  
+| - Opportunities for expansion and introduction of new <br/>products are limited due to Irelands environment and temperature limitations. | -	There are many global competitors with similar product ranges.<br/> -	Shipping limitations as currently only available in Ireland due to potential customs impact.<br/> -	Larger companies that can change their product supplyand increase overall market share. |
 
 
 <br/>
