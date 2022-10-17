@@ -23,45 +23,55 @@
             <hr>
         </div>
         <div class="row">
-        <div class="col">
-            <div class="col-12 mx-auto">
-                <div class="text-center">Manage your Wishlist</div>
-                <hr class="w-50 mb-1 mx-auto"/>
-                {% if wishlist %}
-                {% for product in wishlist.all  %}
-                <div class="card mb-3 rounded-0">
-                    <div class="row g-0">
-                        <div class="col-md-2">
-                            <div class="image-container my-5">
-                                {% if product.image %}
-                                <a href="{{ product.image.url }}" target="_blank">
-                                    <img class="card-img img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                                </a>
-                                {% else %}
-                                <a href="">
-                                    <img class="card-img img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
-                                </a>
-                                {% endif %}
+            <div class="col">
+                <div class="col-12 mx-auto">
+                    <div class="text-center">Manage your Wishlist</div>
+                    <hr class="w-50 mb-1 mx-auto" />
+                    {% if product in wishlist %}
+                    {% for product in wishlist.all  %}
+                    <div class="card mb-3 rounded-0">
+                        <div class="row g-0">
+                            <div class="col-md-2">
+                                <div class="image-container my-5">
+                                    {% if product.image %}
+                                    <a href="{{ product.image.url }}" target="_blank">
+                                        <img class="card-img img-fluid" src="{{ product.image.url }}"
+                                            alt="{{ product.name }}">
+                                    </a>
+                                    {% else %}
+                                    <a href="">
+                                        <img class="card-img img-fluid" src="{{ MEDIA_URL }}noimage.png"
+                                            alt="{{ product.name }}">
+                                    </a>
+                                    {% endif %}
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="card-body">
-                                <h5 class="card-title">{{product.name}}</h5>
-                                <p class="card-text">{{product.description}}</p>
-                                <p class="card-text">{{product.care}}</p>
-                                <p class="card-text"><small class="text-muted">{{product.price}}</small></p>
-                                <a type="button" class="btn btn-wish"
-                                    href="{% url 'wishlist' product.id %}">Remove from Wishlist</a>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{product.name}}</h5>
+                                    <p class="card-text">{{product.description}}</p>
+                                    <p class="card-text">{{product.care}}</p>
+                                    <p class="card-text"><small class="text-muted">{{product.price}}</small></p>
+                                    <a type="button" class="btn btn-wish" href="{% url 'wishlist' product.id %}">Remove
+                                        from Wishlist</a>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    {% endfor %}
+                    {% else %}
+                    <div class="text-center">
+                        <p>No products have been added to your wishlist!</p>
+                        <a href="{% url 'products' %}" class="btn btn-auth rounded-0 my-2">
+                            <span class="icon mr-2">
+                                <i class="fa-solid fa-cactus"></i>
+                            </span>
+                            <span>Visit the store to add products!</span>
+                        </a>
+                    </div>
+                    {% endif %}
                 </div>
-                {% endfor %}
-                {% else %}
-                <p class="card-text">No products have been added to your wishlist!</p>
-                {% endif %}
             </div>
-        </div>
         </div>
     </div>
 </div>

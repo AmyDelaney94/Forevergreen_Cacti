@@ -1,7 +1,7 @@
 {% load static %}
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
 
@@ -61,7 +61,7 @@
     <title>Forevergreen Cacti {% block extra_title %}{% endblock %}</title>
 </head>
 
-<body>
+<body class=" d-flex flex-column h-100">
     <header class="container-fluid base-header">
 
         <!-- Navigation Bar -->
@@ -200,8 +200,8 @@
     {% endblock %}
 
     <!-- Footer -->
-    <footer>
-        <div class="mt-auto d-flex row foot-bg container-fluid p-4 pe-3 sticky-bottom">
+    <footer class="footer mt-auto py-3">
+        <div class="d-flex row foot-bg container-fluid p-4 pe-3">
             <div class="col-sm-4 px-0 py-2 px-md-4">
                 <h6 class="mb-3 text-uppercase">Forevergreen Cacti</h6>
                 <p>Designed by: Amy Delaney</p>
