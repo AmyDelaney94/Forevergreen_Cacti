@@ -208,7 +208,20 @@ Given more time to work on this project, the overall scope of the website could 
 #### Validation Testing:
 | Resource Used | Code Tested | Example | Result |  
 | --- | --- | --- | --- | 
+| <a href="https://jshint.com/">JSHint </a>  |JavaScipt files | | Pass - missing semicolons added and repeat testing passed. |
+| <a href="https://jigsaw.w3.org/css-validator/#validate_by_input"> W3C CSS Validator </a> | All CSS files | <img src="media/testing/validation_testing/checkoutcss.png" alt="A screenshot of checkout.css results with no errors."> | Pass | 
+| <a href="https://validator.w3.org/nu/#textarea"> Html Checker  </a>| All HTML files | <img src="media/testing/validation_testing/cart_html.png" alt="A screenshot of cart.html results.">| Pass - Warnings can be ignored due to layout of HTML file | 
+| pycodestyle | all files containing Python code | <img src="media/testing/validation_testing/pep8.png" alt="A screenshot of pep8 results with no errors."> | Pass * | 
 
+* Pep8 Validation was completed using the following steps. 
+  1.	Run the command pip3 install pycodestyle  
+  2.	In your workspace, press Ctrl+Shift+P (or Cmd+Shift+P on Mac).
+  3.	Type the word linter into the search bar that appears and click on Python: Select Linter from the filtered results. 
+  4.	Select pycodestyle from the list. 
+  5.	PEP8 errors will now be underlined in red, as well as being listed in the PROBLEMS tab beside your terminal.
+-	All errors were resolved, and no problems were detected in the workspace as per the above image with the following exceptions:
+    -	Webhook_handlers.py lines 103 and 147 were too long however, this error was unable to be resolved due to syntax compliance. 
+    - Settings.py lines 148,151,154, and 157 all identified as being too long, this error was unable to be resolved due to syntax compliance.
 
 
 <br/>

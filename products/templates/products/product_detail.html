@@ -98,40 +98,39 @@
             {%  if user.is_authenticated  %}
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <section class="container d-flex justify-content-center mt-5 ml-5">
-                <div class="content-item" id="reviews">
-                    <div class="container d-flex justify-content-center">
-                        <div class="row">
-                            <div class="col">
-                                <div class="card mb-3 shadow p-2 bg-body rounded">
-                                    <form method="POST" style="margin-top:1.5em;">
-                                        {%  csrf_token  %}
-                                        <div class="d-flex flex-wrap justify-content-between mb-3">
-                                            <h3>{{  user.username  }}, Would you like to leave a review? </h3>
-                                        </div>
-                                        <!-- Add Review Form -->
-                                        <fieldset class="review-form">
-                                            <div class="row d-flex flex-wrap justify-content-around mb-3">
-                                                <!-- Review Form-->
-                                                <div
-                                                    class="review-form col-12 col-md-6 col-lg-4 d-flex justify-content-center">
-                                                    {% csrf_token %}
-                                                    {{review_form.as_p}}
-                                                    <!-- {{ review.form.your_review | crispy }} -->
-                                                    <!-- {% csrf_token %} -->
-                                                </div>
-                                                <div class="review-form d-flex justify-content-center">
-                                                    <button type="submit" class="btn shopping-btn rounded-0 mt-5">Submit
-                                                        A
-                                                        Review</button>
-                                                </div>
+                    <div class="content-item" id="reviews">
+                        <div class="container d-flex justify-content-center">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card mb-3 shadow p-2 bg-body rounded">
+                                        <form method="POST" style="margin-top:1.5em;">
+                                            {%  csrf_token  %}
+                                            <div class="d-flex flex-wrap justify-content-between mb-3">
+                                                <h3>{{  user.username  }}, Would you like to leave a review? </h3>
                                             </div>
-                                        </fieldset>
-                                    </form>
+                                            <!-- Add Review Form -->
+                                            <fieldset class="review-form">
+                                                <div class="row d-flex flex-wrap justify-content-around mb-3">
+                                                    <!-- Review Form-->
+                                                    <div
+                                                        class="review-form col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                                                        {% csrf_token %}
+                                                        {{review_form.as_p}}
+                                                    </div>
+                                                    <div class="review-form d-flex justify-content-center">
+                                                        <button type="submit"
+                                                            class="btn shopping-btn rounded-0 mt-5">Submit
+                                                            A
+                                                            Review</button>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 </section>
             </div>
 
@@ -154,43 +153,43 @@
             <!-- List Reviews -->
             {%  if reviews  %}
             <div class="col-12 col-md-6 col-lg-4">
-            <section class="container mt-3 mb-3 pt-3 reviews-section">
-                <div class="card shadow p-3 m-3 bg-body rounded">
-                    <!-- Total Number of Reviews-->
-                    <h4><i class="fa-solid fa-comment"></i> Review{{ product.reviews.count|pluralize }}:
-                        {{ product.reviews.count }}
-                    </h4>
-                    {% for review in reviews %}
-                    <div class="row pt-3">
-                        <div class="col-md-2"></div>
+                <section class="container mt-3 mb-3 pt-3 reviews-section">
+                    <div class="card shadow p-3 m-3 bg-body rounded">
+                        <!-- Total Number of Reviews-->
+                        <h4><i class="fa-solid fa-comment"></i> Review{{ product.reviews.count|pluralize }}:
+                            {{ product.reviews.count }}
+                        </h4>
+                        {% for review in reviews %}
+                        <div class="row pt-3">
+                            <div class="col-md-2"></div>
 
-                        <div class="reviews-list pb-3 col-md-6 text-center text-md-start">
-                            <!-- Review Details -->
-                            <h5 class="mt-0">{{  review.name  }}</h5>
-                            <ul class="list-unstyled">
-                                <li><i class="fa-solid fa-calendar-days"></i> <i>{{  review.date_posted  }}</i></li>
-                            </ul>
-                            <div class="text-start ms-3">
-                                {{review.your_review | linebreaks  }}
+                            <div class="reviews-list pb-3 col-md-6 text-center text-md-start">
+                                <!-- Review Details -->
+                                <h5 class="mt-0">{{  review.name  }}</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fa-solid fa-calendar-days"></i> <i>{{  review.date_posted  }}</i></li>
+                                </ul>
+                                <div class="text-start ms-3">
+                                    {{review.your_review | linebreaks  }}
+                                </div>
+
+                                {%  if review.name == user  %}
+                                <!-- Update Review if User is Author -->
+                                <a class="btn shopping-btn btn-sm me-3" href="{%  url 'review-update' review.pk %}"
+                                    aria-label="Update Review">Update</a>
+                                <!-- Delete Review if User is Author -->
+                                <a class="btn btn-danger btn-sm ms-3" href="{%  url 'DeleteReview' review.pk %}"
+                                    aria-label="Delete Review">Delete</a>
+                                {%  endif  %}
                             </div>
-
-                            {%  if review.name == user  %}
-                            <!-- Update Review if User is Author -->
-                            <a class="btn shopping-btn btn-sm me-3" href="{%  url 'review-update' review.pk %}"
-                                aria-label="Update Review">Update</a>
-                            <!-- Delete Review if User is Author -->
-                            <a class="btn btn-danger btn-sm ms-3" href="{%  url 'DeleteReview' review.pk %}"
-                                aria-label="Delete Review">Delete</a>
-                            {%  endif  %}
+                            <div class="col-md-2"></div>
                         </div>
-                        <div class="col-md-2"></div>
-                    </div>
-                    {% endfor %}
+                        {% endfor %}
 
-                    {%  endif  %}
-                </div>
-            </section>
-        </div>
+                        {%  endif  %}
+                    </div>
+                </section>
+            </div>
         </div>
     </div>
 

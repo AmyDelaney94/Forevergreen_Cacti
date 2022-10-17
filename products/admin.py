@@ -34,13 +34,6 @@ class ReviewAdmin(admin.ModelAdmin):
     search_fields = ('name', 'your_review')
 
 
-# class WishlistAdmin(admin.ModelAdmin):
-#     """Class to display Wishlist on admin site"""
-#     list_display = ('name', 'user_wishlist', 'product',)
-#     list_filter = ('name')
-#     search_fields = ('name', 'user_wishlist')
-
-
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Review, ReviewAdmin)
