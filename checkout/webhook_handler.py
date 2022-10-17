@@ -24,12 +24,12 @@ class StripeWH_Handler:
             {'order': order})
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.txt',
-            {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
+            {'order': order, 'contact_email': settings.EMAIL_HOST_USER})
 
         send_mail(
             subject,
             body,
-            settings.DEFAULT_FROM_EMAIL,
+            settings.EMAIL_HOST_USER,
             [cust_email]
         )
 
@@ -100,7 +100,7 @@ class StripeWH_Handler:
         if order_exists:
             self._send_confirmation_email(order)
             return HttpResponse(
-                content=f'Webhook received: {event["type"]} | SUCCESS: Verified order already in database',
+                content=f'Webhook received: {event["type"]} | SUCCESS: Order in database',
                 status=200)
         else:
             order = None

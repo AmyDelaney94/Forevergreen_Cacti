@@ -98,7 +98,7 @@ a.nav-link {
 
 
 .overlay {
-	height: 100%;
+	height: auto;
 	width: 100%;
 	top: 0;
 	left: 0;
@@ -202,6 +202,7 @@ ul.tips {
 /* Footer */
 .foot-bg {
     bottom: 0;
+    margin-top: auto;
     color:#edf3f2;
     background-color:#698467;
     display: block;
