@@ -202,43 +202,43 @@ Given more time to work on this project, the overall scope of the website could 
 ### Manual Testing
 | Feature Tested| Testing Method | Example | Result |  
 | --- | --- | --- | --- | 
-| Registration - Blank Field |- Each mandatory field was left blank intentionally to ensure alert appeared |||
-| Registration - Invalid Email Field |- An invalid email address was tested to ensure error message appeared|||
+| Registration - Blank Field | - Each mandatory field was left blank intentionally to ensure alert appeared |<img src="media/testing/manual_testing/blank.png" alt="Blank field validation attempt.">| Pass |
+| Registration - Invalid Email Field |- An invalid email address was tested to ensure error message appeared|<img src="media/testing/manual_testing/invalidemail.png" alt="Invalid Email address attempt.">| Pass |
 | Registration - Common Password | - A common password was tested to check security|<img src="media/testing/manual_testing/passwordcommon.png" alt="Common password attempt verification.">| Pass |
 | Registration - Short Password |- A short password was tested to check that an error appears if less than 8 characters entered |<img src="media/testing/manual_testing/passwordlength.png" alt="Short password attempt verification.">| Pass |
 | Registration - Short Username |- A short username was tested to check that an error appears if less than 4 characters are entered |<img src="media/testing/manual_testing/username.png" alt="Short username attempt verification.">| Pass |
 | Registration - Email Verification |- When new account is set up user should be asked to verify the email address before logging in for the first time. |<img src="media/testing/manual_testing/accountverification.png" alt="View email verification request.">| Pass |
 | Registration - Email Confirmation |- When new account is set up user should be sent a verification email to the email address used during registration.|<img src="media/testing/manual_testing/emailconfirmation.png" alt="View email verification sent to user.">| Pass |
-| Sign-In - - Blank Field ||||
+| Sign-In - - Blank Field |- Each mandatory field was left blank intentionally to ensure alert appeared |<img src="media/testing/manual_testing/signinblank.png" alt="Blank field validation attempt for sign in.">| Pass |
 | Sign in - Incorrect Username Field | - Tested with incorrect spelling and capitalisation of some letters to ensure account security |<img src="media/testing/manual_testing/incorrectsignin.png" alt="Only correct combination of username and password accepted for login.">| Pass |
 | Sign in - Incorrect Password Field | - Tested with incorrect spelling and capitalisation of some letters to ensure account security |<img src="media/testing/manual_testing/incorrectsignin.png" alt="Only correct combination of username and password accepted for login.">| Pass |
-| Non-Signed in user - review ||||
-| Non-Signed in user - product detail ||||
+| Non-Signed in user - review |- The review section of the product details page is only available to logged in users and users that are not logged in are redirected to sign in page.| <img src="media/testing/manual_testing/nonuserproductdetail.png" alt="An example of the product detail page redirection to sign in screen."> | Pass | 
+| Non-Signed in user - product detail |- The product details page is only available to logged in users and users that are not logged in are directed to sign in page.| <img src="media/testing/manual_testing/nonuserproductdetail.png" alt="An example of the product detail page redirection to sign in screen."> | Pass | 
 | Non-Signed in user - Profile menu |- Only logged in users have access to full profile menu options |<img src="media/testing/manual_testing/nologinprofile.png" alt="View menu for non logged in user."> | Pass | 
-| Signed in user - review ||||
-| Signed in user - product detail ||||
+| Signed in user - review |- The product details page shows the number of reviews on the page and review text box. | <img src="media/readme_media/productdetail2.png" alt="An example of the product detail page that shows the review section of the page."> | Pass | 
+| Signed in user - product detail |- The product details page contains correct information about the product. | <img src="media/readme_media/productdetail.png" alt="An example of the product detail page that shows image and summary of the product."> | Pass | 
 | Signed in user - Profile menu |- Only logged in users have access to full profile menu options |<img src="media/testing/manual_testing/loggedinprofile.png" alt="View menu for logged in user that is not admin."> | Pass | 
 | Signed in user - Profile menu Admin |- Only admin can see the link to admin site |<img src="media/testing/manual_testing/adminprofileview.png" alt="View menu for logged in user that is admin.">| Pass |
-| Signed in user - Checkout ||||
-| Signed in user - Review Author ||||
-| Signed in user - Review Not Author || <img src="media/testing/manual_testing/reviewnotauthor.png" alt="View of logged in user but not review author.">| Pass |
-| Update or Delete a review - author| |<img src="media/testing/manual_testing/editdeleteauth.png" alt="View of edit and delete options for review author.">| Pass |
-| Update a review - Pre-populated Data ||<img src="media/testing/manual_testing/updatereview.png" alt="View of logged in user but not review author.">| Pass |
+| Signed in user - Checkout | - Correct details are displayed on checkout screen and payment details not stored | <img src="media/readme_media/checkout.png" alt="Checkout page displays order summary and shipping details for the user"> | Pass |
+| Signed in user - Review Not Author |- Only review authors have access to edit or delete reviews | <img src="media/testing/manual_testing/reviewnotauthor.png" alt="View of logged in user but not review author.">| Pass |
+| Signed in user - Update or Delete own review | - Author of review shown edit or delete options for their reviews |<img src="media/testing/manual_testing/editdeleteauth.png" alt="View of edit and delete options for review author.">| Pass |
+| Update a review - Pre-populated Data |- When update review is selected the text box should be pre-populated with the original information. |<img src="media/testing/manual_testing/updatereview.png" alt="View of logged in user but not review author.">| Pass |
 | Delete a review - author| - confirmation of review delete |<img src="media/testing/manual_testing/deletereviewconfirmation.png" alt="View of delete review confirmation.">| Pass |
-| Update User Profile - Pre-populated Data ||||
-| Site Alert - sign in ||||
-| Site Alert - sign out |- Alert requests user to confirm before logging out of site. |||
-| Site Alert - sign out |- Alert to confirm successful signing out. |||
-| Site Alert - review update |||| 
+| Update User Profile - Pre-populated Data |- Delivery address and contact information is pre-populated from previous orders and available to be updated by user |<img src="media/readme_media/profile.png" alt="An image of the user profile summary page."> | Pass | 
+| Site Alert - sign in |- Alert to confirm User successfully signed in.|<img src="media/testing/manual_testing/signinalert.png" alt="Alert to confirm successful login.">| Pass |
+| Site Alert - sign out |- Alert requests user to confirm choice before logging out of site. | <img src="media/readme_media/signoutpage.png" alt="Confirmation of logout decision"> | Pass | 
+| Site Alert - sign out |- Alert to confirm successful signing out. |<img src="media/testing/manual_testing/signoutalert.png" alt="Alert to confirm successful sign out.">| Pass |
+| Site Alert - review update |- Alert to confirm review update was successful. |<img src="media/testing/manual_testing/reviewupdate.png" alt="Alert to confirm successful review update.">| Pass |
 | About Page - Links | Testing if signup and home page link are activated. Both of these links are active and take the user to the correct location on the site when selected. | <img src="media/readme_media/aboutforevergreen.png" alt="A page dedicated to forevergreen cacti and why the store exists">| Pass | 
 | Newsletter | - Field must be completed with valid email address for submission to be accepted. | <img src="media/testing/manual_testing/newsletter.png" alt="error message when blank newsletter input field attempted.">| Pass | 
-| Wishlist - add from store |||
-| Wishlist - remove |||
-| Wishlist - add from profile page |||
+| Wishlist - add from profile page |- Products can be added to wishlist by selecting them on the User profile Update form |<img src="media/testing/manual_testing/wishlistfromprofile.png" alt="Products added to wishlist from profile update page.">| Pass | 
+| Wishlist - remove |- Products can be removed from wishlist by selecting button on wishlist menu |<img src="media/testing/manual_testing/wishlistdelete.png" alt="Products removed from wishlist.">| Pass | 
+| Wishlist - remove alert | - Products removed successfully from wishlist |<img src="media/testing/manual_testing/wishlistremove.png" alt="Alert for products removed from wishlist.">| Pass |
+| Wishlist - add from store | - Products can be added to wishlist directly from the store |<img src="media/testing/manual_testing/wishlistadd.png" alt="Products added to wishlist from store.">| Pass | 
 | Cart - product added ||||
 | Cart - quantity updated ||||
 | Cart - product removed ||||
-| Checkout view ||||
+| Checkout view | |||
 | Checkout incomplete details |||| 
 | Checkout - save details |||| 
 | Stripe - incorrect number ||||
@@ -253,6 +253,9 @@ Given more time to work on this project, the overall scope of the website could 
 | Order Confirmation Email - email receipt ||||
 | Admin CRUD functionality | - The admin account has access to create, update and delete products, user information, newsletter subscribtions etc | <img src="media/testing/manual_testing/admincrud.png" alt="Admin access to CRUD functionality.">| Pass | 
 | Admin - restricted access | - Only the admin account can log into the admin view panel. |<img src="media/testing/manual_testing/adminaccess.png" alt="Admin access security test.">| Pass |
+
+
+
 
 <br/>
 

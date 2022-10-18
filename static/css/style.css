@@ -240,7 +240,8 @@ ul.tips {
 .error-border {
     border-color: #698467;
     background-color: #edf3f2;
-    color: #222;
+    border-width: 5px;
+    color: #0D1F22;
 }
 
 
