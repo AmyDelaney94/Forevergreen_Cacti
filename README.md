@@ -52,7 +52,7 @@ A link to the deployed website can be found <a href="https://forevergreen-cacti.
 | Shopping Cart | <img src="media/wireframes/cart.png" alt="image of Shopping Cart page on desktop view"> <img src="media/wireframes/cart_mobile.png" alt="image of Shopping Cart page on mobile view"> |
 | Checkout Page |<img src="media/wireframes/payment.png" alt="image of Checkout page on desktop view"> <img src="media/wireframes/payment_mobile.png" alt="image of Checkout page on mobile view"> |
 | Product Description | <img src="media/wireframes/product_description.png" alt="image of product description page on desktop view"> |
-| Products Page | <img src="media/wireframes/products.png" alt="image of products page on desktop view"> <img src="media/wireframes/products_mobile.png" alt="image of products page on mobile view">| 
+| Products Page | <img src="media/wireframes/products.png" alt="image of products page on desktop view"> <img src="media/wireframes/product_mobile.png" alt="image of products page on mobile view">| 
 | Profile Page |<img src="media/wireframes/profile.png" alt="image of User Profile page on desktop view"> <img src="media/wireframes/profile_mobile.png" alt="image of User Profile page on mobile view">|
 | Wishlist Page | <img src="media/wireframes/wishlist.png" alt="image of Wishlist page on desktop view"> <img src="media/wireframes/wishlist_mobile.png" alt="image of Wishlist page on mobile view"> |
 
