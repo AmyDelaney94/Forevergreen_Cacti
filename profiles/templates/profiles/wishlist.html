@@ -26,8 +26,8 @@
             <div class="col">
                 <div class="col-12 mx-auto">
                     <div class="text-center">Manage your Wishlist</div>
-                    <hr class="w-50 mb-1 mx-auto">
-                    {% if product in wishlist %}
+                    <hr class="w-50 mb-1 mx-auto"/>
+                    {% if wishlist %}
                     {% for product in wishlist.all  %}
                     <div class="card mb-3 rounded-0">
                         <div class="row g-0">
@@ -51,7 +51,7 @@
                                     <h5 class="card-title">{{product.name}}</h5>
                                     <p class="card-text">{{product.description}}</p>
                                     <p class="card-text">{{product.care}}</p>
-                                    <p class="card-text"><small class="text-muted">{{product.price}}</small></p>
+                                    <p class="card-text"><small class="text-muted"> € {{product.price}}</small></p>
                                     <a type="button" class="btn btn-wish" href="{% url 'wishlist' product.id %}">Remove
                                         from Wishlist</a>
                                 </div>
