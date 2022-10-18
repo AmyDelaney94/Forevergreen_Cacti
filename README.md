@@ -210,7 +210,7 @@ Given more time to work on this project, the overall scope of the website could 
 | Application | Psycopg2 | Database driver used to connect the database to Python code | 
 | Database | SQLite|  used as the database during development|
 | Database | PostgreSQL| The database used to store all the data on the deployment site | 
-| Other Resources | Chrome DevTools | Used to debug and view changes | 
+| Other Resources | Chrome DevTools | Used to debug and view changes and test responsiveness | 
 | Other Resources | Balsamiq Wireframes| Chosen to design wireframes during project planning | 
 | Other Resources | LucidCharts |  Used to create models used in the project | 
 | Other Resources | Font Awesome | Used for visual icons on the site to enhance UX | 
@@ -227,6 +227,10 @@ Given more time to work on this project, the overall scope of the website could 
 
 <!-- TOC --><a name="manual-testing"></a>
 ### Manual Testing
+- Responsiveness was tested using Chrome Dev Tools. The site was tested for mobiles, tablets, laptops and desktop responsivity. 
+
+<br/>
+
 | Feature Tested| Testing Method | Example | Result |  
 | --- | --- | --- | --- | 
 | Registration - Blank Field | - Each mandatory field was left blank intentionally to ensure alert appeared |<img src="media/testing/manual_testing/blank.png" alt="Blank field validation attempt.">| Pass |
@@ -276,7 +280,6 @@ Given more time to work on this project, the overall scope of the website could 
 | User Profile - Order History |- Order history available on profile page.| <img src="media/testing/manual_testing/myprofile.png" alt="Order history available on my profile.">| Pass |
 | Order Confirmation - notification |- Alert is displayed correctly with users email and order number. |<img src="media/testing/manual_testing/orderalert.png" alt="Order confirmation alert displayed for user.">| Pass |
 | Order Success Page | -This page provides the user with a summary of their order, the shipping details, and the overall cost. | <img src="media/readme_media/checkoutsuccess.png" alt="An image of the checkout success page."> | Pass | 
-| Order Confirmation Email - email receipt ||||
 | Admin CRUD functionality | - The admin account has access to create, update and delete products, user information, newsletter subscribtions etc | <img src="media/testing/manual_testing/admincrud.png" alt="Admin access to CRUD functionality.">| Pass | 
 | Admin - restricted access | - Only the admin account can log into the admin view panel. |<img src="media/testing/manual_testing/adminaccess.png" alt="Admin access security test.">| Pass |
 | Error404 - Display |- Page displayed when incorrect url is searched for and redirect to home page works. |<img src="media/readme_media/error404.png" alt="Clip of the error404 page when incorrect url selected."> | Pass |
@@ -373,7 +376,10 @@ The following details the Web Marketing strategies used for this project:
 
 <!-- TOC --><a name="unfixed-bug"></a>
 #### Unfixed Bug:
-- 
+| Bug | Appearance | Attempted Resolution |
+| --- | --- | --- | 
+| Order Confirmation Email | - no email is sent to the user once order is confirmed | - The issue has been identified as being present in the Stripe Webhooks. <br/> - I checked the endpoint url in Stripe and noticied a typo, this was corrected to the correct endpoint url and the secret key subsequently updated, however the webhook continued to fail. |
+| Empty Wishlist View | - When no products have been added to the wishlist, the user should see a button directing them to the shop. | - This feature did not display correctly. The issue has been identified in the if statement of wishlist.html. Given more time I would work to fix this bug. |
 
 <br/>
 
@@ -387,7 +393,7 @@ Heroku was used to deploy the site and it was achieved by following the steps be
   5.	Go to "Config Vars" under the "Settings" tab.
   6.	Click on "Reveals Config Vars" and enter the following information:
 	      - CLOUDINARY_URL : add your cloudinary key here.
-        - DATABASE_URL : add the URL from the postgres database.
+        - DATABASE_URL : add the URL from the postgres database**.
         - SECRET_KEY = a secret key for your app.
         - PORT : 8000
         - DISABLE_COLLECTSTATIC = 1 during development (Remove when deploying production!)
@@ -399,6 +405,7 @@ Heroku was used to deploy the site and it was achieved by following the steps be
   12.	Choose "Automatic deploys" or "Manual deploys" to deploy your application.
   13. Select the correct branch for deployment from the drop-down menu and click Deploy Branch for manual deployment.
 - Note: Ensure in Django settings, DEBUG is False, create a Procfile and save the database and secret key to env.py.
+- ** To add postgres database to project navigate to the Resources tab in heroku, select 'Find add ons' and select Heroku Postgres.
   <br/>
 - Project Version Control – Git was used to control the versions of the project during development. Changes were added, committed, and  saved using commands such as ‘git add .’ and ‘git commit’, and ‘git push’. Once changes had been committed, they were pushed and stored  on the GitHub repository with the rest of the project's source code. 
 <br/>
