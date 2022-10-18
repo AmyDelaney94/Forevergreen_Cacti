@@ -202,33 +202,36 @@ Given more time to work on this project, the overall scope of the website could 
 ### Manual Testing
 | Feature Tested| Testing Method | Example | Result |  
 | --- | --- | --- | --- | 
-| Registration - Blank Field ||||
-| Registration - Invalid Email Field ||||
-| Registration - Common Password ||||
-| Registration - Short Password ||||
-| Registration - Short Username ||||
-| Registration - Email Verification ||||
+| Registration - Blank Field |- Each mandatory field was left blank intentionally to ensure alert appeared |||
+| Registration - Invalid Email Field |- An invalid email address was tested to ensure error message appeared|||
+| Registration - Common Password | - A common password was tested to check security|<img src="media/testing/manual_testing/passwordcommon.png" alt="Common password attempt verification.">| Pass |
+| Registration - Short Password |- A short password was tested to check that an error appears if less than 8 characters entered |<img src="media/testing/manual_testing/passwordlength.png" alt="Short password attempt verification.">| Pass |
+| Registration - Short Username |- A short username was tested to check that an error appears if less than 4 characters are entered |<img src="media/testing/manual_testing/username.png" alt="Short username attempt verification.">| Pass |
+| Registration - Email Verification |- When new account is set up user should be asked to verify the email address before logging in for the first time. |<img src="media/testing/manual_testing/accountverification.png" alt="View email verification request.">| Pass |
+| Registration - Email Confirmation |- When new account is set up user should be sent a verification email to the email address used during registration.|<img src="media/testing/manual_testing/emailconfirmation.png" alt="View email verification sent to user.">| Pass |
 | Sign-In - - Blank Field ||||
-| Sign in - Incorrect Username Field ||||
-| Sign in - Incorrect Password Field ||||
+| Sign in - Incorrect Username Field | - Tested with incorrect spelling and capitalisation of some letters to ensure account security |<img src="media/testing/manual_testing/incorrectsignin.png" alt="Only correct combination of username and password accepted for login.">| Pass |
+| Sign in - Incorrect Password Field | - Tested with incorrect spelling and capitalisation of some letters to ensure account security |<img src="media/testing/manual_testing/incorrectsignin.png" alt="Only correct combination of username and password accepted for login.">| Pass |
 | Non-Signed in user - review ||||
 | Non-Signed in user - product detail ||||
-| Non-Signed in user - Profile menu ||||
+| Non-Signed in user - Profile menu |- Only logged in users have access to full profile menu options |<img src="media/testing/manual_testing/nologinprofile.png" alt="View menu for non logged in user."> | Pass | 
 | Signed in user - review ||||
 | Signed in user - product detail ||||
-| Signed in user - Profile menu ||||
+| Signed in user - Profile menu |- Only logged in users have access to full profile menu options |<img src="media/testing/manual_testing/loggedinprofile.png" alt="View menu for logged in user that is not admin."> | Pass | 
+| Signed in user - Profile menu Admin |- Only admin can see the link to admin site |<img src="media/testing/manual_testing/adminprofileview.png" alt="View menu for logged in user that is admin.">| Pass |
 | Signed in user - Checkout ||||
 | Signed in user - Review Author ||||
 | Signed in user - Review Not Author || <img src="media/testing/manual_testing/reviewnotauthor.png" alt="View of logged in user but not review author.">| Pass |
 | Update or Delete a review - author| |<img src="media/testing/manual_testing/editdeleteauth.png" alt="View of edit and delete options for review author.">| Pass |
 | Update a review - Pre-populated Data ||<img src="media/testing/manual_testing/updatereview.png" alt="View of logged in user but not review author.">| Pass |
-| Delete a review - author| - confirmation of review delete|<img src="media/testing/manual_testing/deletereviewconfirmation.png" alt="View of delete review confirmation.">| Pass |
+| Delete a review - author| - confirmation of review delete |<img src="media/testing/manual_testing/deletereviewconfirmation.png" alt="View of delete review confirmation.">| Pass |
 | Update User Profile - Pre-populated Data ||||
 | Site Alert - sign in ||||
 | Site Alert - sign out |- Alert requests user to confirm before logging out of site. |||
 | Site Alert - sign out |- Alert to confirm successful signing out. |||
 | Site Alert - review update |||| 
 | About Page - Links | Testing if signup and home page link are activated. Both of these links are active and take the user to the correct location on the site when selected. | <img src="media/readme_media/aboutforevergreen.png" alt="A page dedicated to forevergreen cacti and why the store exists">| Pass | 
+| Newsletter | - Field must be completed with valid email address for submission to be accepted. | <img src="media/testing/manual_testing/newsletter.png" alt="error message when blank newsletter input field attempted.">| Pass | 
 | Wishlist - add from store |||
 | Wishlist - remove |||
 | Wishlist - add from profile page |||
@@ -239,7 +242,8 @@ Given more time to work on this project, the overall scope of the website could 
 | Checkout incomplete details |||| 
 | Checkout - save details |||| 
 | Stripe - incorrect number ||||
-| Stripe - incomplete date ||||
+| Stripe - incomplete date |- Only cards with completed valid date can be accepted for payments |<img src="media/testing/manual_testing/incompletedate.png" alt="Error message displaying if card date is incomplete.">| Pass |
+| Stripe - expired card | - Only cards with expiry date in the future can be accepted for payments |<img src="media/testing/manual_testing/expiredcard.png" alt="Error message displaying if card is expired.">| Pass |
 | Stripe - incomplete security code ||||
 | Stripe - incomplete ZIP code ||||
 | Update User Profile - Pre-populated Data |- Pre saved data available on profile page.| <img src="media/testing/manual_testing/myprofile.png" alt="Pre saved data available on profile page.">| Pass |
@@ -263,7 +267,7 @@ Given more time to work on this project, the overall scope of the website could 
 
 * Pep8 Validation was completed using the following steps. 
   1.	Run the command pip3 install pycodestyle  
-  2.	In your workspace, press Ctrl+Shift+P (or Cmd+Shift+P on Mac).
+  2.	In the workspace, press Ctrl+Shift+P (or Cmd+Shift+P on Mac).
   3.	Type the word linter into the search bar that appears and click on Python: Select Linter from the filtered results. 
   4.	Select pycodestyle from the list. 
   5.	PEP8 errors will now be underlined in red, as well as being listed in the PROBLEMS tab beside your terminal.
