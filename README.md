@@ -238,7 +238,6 @@ Given more time to work on this project, the overall scope of the website could 
 | Cart - product added ||||
 | Cart - quantity updated ||||
 | Cart - product removed ||||
-| Checkout view | |||
 | Checkout incomplete details |||| 
 | Checkout - save details |||| 
 | Stripe - incorrect number ||||
