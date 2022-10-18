@@ -57,7 +57,7 @@ A link to the deployed website can be found <a href="https://forevergreen-cacti.
 | Wishlist Page | <img src="media/wireframes/wishlist.png" alt="image of Wishlist page on desktop view"> <img src="media/wireframes/wishlist_mobile.png" alt="image of Wishlist page on mobile view"> |
 
 
-- <a href="https://www.lucidchart.com/" >Lucid Charts</a> was used to design the unique models used in this project.
+- <a href="https://www.lucidchart.com/" >Lucid Charts</a> was used to design the unique models used in this project. <img src="media/wireframes/modelchart.png" alt="image of model layout designed in lucid charts">
 
 #### Colour Scheme
 - Colours were chosen using <a href="https://coolors.co/">Coolors</a>.
@@ -93,26 +93,52 @@ My personal goals for this project are that:
 <!-- TOC --><a name="user-stories"></a>
 ### User Stories
 As a user I want to:
-- 
+- As a shopper I want to be able to view the product list so that I can purchase some new products.
+- As a shopper I want to be able to view the individual product details so that I can Identify care instuctions, price and description.
+- As a shopper I want to be able to easily identify unique products and deals so that I can find the perfect product for me. 
+- As a shopper I want to be able to easily view my shopping cart total so that I can know how much my shopping cost. 
+- As a shopper I want to be able to easily contact the store so that I can see if my query a product or ask questions. 
+- As a shopper I want to be able to easily search the store by name or keyword so that I can find a specific product to purchase. 
+- As a shopper I want to be able to create a wish-list so that I can save my favourite items for future purchases.
+- As a shopper I want to be able to easily easily filter the available products so that I can sort by price and category.
+- As a shopper I want to be able to sort by multiple categories so that I can to find products best suited to my needs.
+- As a Registered User I want to be able to easily register for an account so that I can have a personal account and keep track of my shopping cart.
+- As a Registered User I want to be able to easily log in and log out so that I can access my personal profile.
+- As a Registered User I want to be able to easily reset my password so that I can recover my account if I forget it.
+- As a Registered User I want to be able to receive email confirmation after registration so that I can verify my account details.
+- As a Registered User I want to be able to create a personal profile so that I can have a unique profile and keep track of my shopping history.
+- As a shopper I want to be able to create and read reviews so that I can decide if it is a good purchase for me.
+- As a Registered User I want to be able to view a specific category of products so that I can quickly find products that I am interested in.
+- As a Registered User I want to be able to easily view an information or about page so that I can see if it is a site that I would want to register an account on.
+- As a Registered User I want to be able to easily select the quantity of a product so that I can purchase multiple items if required.
+- As a Registered User I want to be able to easily easily view my shopping cart so that I can view the products, quantities and total cost of my purchse.
+- As a Registered User I want to be able to adjust the products in my shopping cart so that I can easily make changes before final purchase. 
+- As a Registered User I want to be able to easily enter payment information so that I can purchase selected items with ease.
+- As a Registered User I want to be able to know that my personal and payment information is safe and secure so that I can enter information to make the purchase confidently.
+- As a Registered User I want to be able to view order confirmation so that I can verify no mistakes have been made.
+- As a shopper I want to have ability to sign up to a Newsletter to stay up to date on new product introductions.
+
 
 As an Admin I want to: 
-- 
+- Be able to Add products to the store so that I can add new options to online store.
+- Be able to Edit or Update products so that I can make changes to description, availability, price etc. 
+- Be able to Delete products from store so that I can remove products that are no longer available from the store.
 
 <br/>
 
 <!-- TOC --><a name="agile-design"></a>
 ### Agile Design
-- An Agile Approach was used to develop this site. This was achieved by breaking the project down into smaller tasks and assigning each of those tasks, labels based on priority. 
+- An Agile Approach was used to develop this site. That is, each activity was broken down into small portions and performed iteratively so that as it was repeated, it was tweaked and improved on with each cycle. This was achieved by breaking the project down into smaller tasks and assigning each of those tasks, labels based on priority. 
 
-To complete the overall aim of the Forevergreen Cacti store concept, 25 issues were documented as specific tasks called User Stories. These User Stories are small sections of the project designed to accomplish a specific goal. 
+To complete the overall aim of the Forevergreen Cacti store concept, 27 issues were documented as specific tasks called User Stories. These User Stories are small sections of the project designed to accomplish a specific goal. These User Stories then had acceptance criteria attached for each so that it was clear when the User Stories were achieved as each of these conditions were met.
 The acceptance criteria I followed when completing this development project was that if when completing and testing each User Story, the task was completed successfully such as adding an item to the cart or logging in and out of the site then I deemed the passing conditions met. Once the User Story was working effectively it was moved across the Kanban board. 
 
-As mentioned above this project used a Kanban board, which was set up in my <a href="https://github.com/users/AmyDelaney94/projects/2" alt="link to Kanban Board">GitHub Projects here</a>, to help keep track of the work that was left to do, that was in progress and that was completed.
+User Stories were completed based on priority. The MoSCoW Prioritization technique was used to assign priorities for Product Backlog Items to be completed in a particular time box. GitHub Labels was used to categories the User Stories into Must Have, Nice to Have. This clearly showed which User Stories were more important to implement first and in what order. This kept the scope of the project in focus at all times and only implemented what was essential first.
 
-Examples of how my project progressed through the use of the Kanban board can be seen below.
-| Week | Board |
-| --- | --- |
+Information radiators in Agile show real-time, informative and straightforward work status.As mentioned above this project used a Kanban board, which was set up in my <a href="https://github.com/users/AmyDelaney94/projects/2" alt="link to Kanban Board">GitHub Projects here</a>, to help keep track of the work that was left to do, that was in progress and that was completed.
 
+Within the timeframe of this project 96% of all User Story were completed and met the passing criteria as tested in the manual testing section below. 
+100% of all User Stories marked as Must Haves were completed and all but 1 Nice to Have User Story was completed. Any left uncompleted and are documented in the future features section below.
 
 <br/>
 
@@ -145,7 +171,7 @@ The user stories mentioned above were used to ensure a positive UX was achieved.
 | Stripe | - Stipe was implemented to ensure Secure Payments </br> - A stripe developer account was created at <a href="https://stripe.com/">Stripe.com</a> to gain access to the api keys required to run the payment processes. </br> - The stripe public key, stripe secret key and stripe webhook key were inserted into the env.py file and the heroku config vars. </br> - Stripe documentation was followed to impliment Stripe as the payment platform. | <img src="media/readme_media/checkout.png" alt="The bottom of the Checkout page contains the stripe payment section"> |
 | Toasts | - Toasts are used to communicate notifications to the user, examples include logging in and out and adding items to the shopping cart. | <img src="media/readme_media/successtoast.png" alt="Image of the toast that appears on the top right-hand side of the screen."> |
 | Review Feature | - If the author of a review is logged-in they have the option to either edit or delete their review.</br> - The edit and delete buttons are the same colour theme as the rest of the site and redirect the user to the selected page.| <img src="media/readme_media/reviewedits.png" alt="Clip of the edit and delete options for the reviews."> <img src="media/readme_media/productdetail2.png" alt="An example of the product detail page that shows the review section of the page."> |
-| Error Pages |- This feature was added to provide the site with customised error pages that are in theme with the main site. </br> - The error pages included were error 400 - bad request, error 403 - No permission to access content, error 404 - Page not found and error 500 - internal server error ||
+| Error Pages |- This feature was added to provide the site with customised error pages that are in theme with the main site. </br> - The error pages included were error 400 - bad request, error 403 - No permission to access content, error 404 - Page not found and error 500 - internal server error |<img src="media/readme_media/error404.png" alt="Clip of the error404 page when incorrect url selected."> |
 | Privacy Policy | - This feature was added to ensure that the site complies with GDPR. <br/> - There is a link for users in the footer that directs them to the policy.| <img src="media/readme_media/policy.png" alt="An example of the privacy policy generated specifically for this site."> |
 
 <br/>
@@ -153,13 +179,14 @@ The user stories mentioned above were used to ensure a positive UX was achieved.
 <!-- TOC --><a name="future-features"></a>
 ### Future Features
 Given more time to work on this project, the overall scope of the website could be expanded:  
--  I would redirect the user to the page of the review being updated instead of the main store page. 
-- I would provide the admin with access to update the product database from the store rather than navigating to the admin panel. 
+-  Redirect the user to the page of the review being updated instead of the main store page. 
+- Provide the admin with access to update the product database from the store rather than navigating to the admin panel. 
 - Sign in with social media. 
 - Automatic login after registraion verification - given more time this feature could be implitmented by importing login from django.contrib.auth. 
 - Email after subscribing to verify the email address
 - Newsletter - option to unsubscribe from newsletter 
-- Users can add rating or likes to products. 
+- Users can add rating or likes to products.
+- Create a Frequently Asked Questions section to allow further interaction between customer and store owners.  
 
 <br/>
 
@@ -235,26 +262,24 @@ Given more time to work on this project, the overall scope of the website could 
 | Wishlist - remove |- Products can be removed from wishlist by selecting button on wishlist menu |<img src="media/testing/manual_testing/wishlistdelete.png" alt="Products removed from wishlist.">| Pass | 
 | Wishlist - remove alert | - Products removed successfully from wishlist |<img src="media/testing/manual_testing/wishlistremove.png" alt="Alert for products removed from wishlist.">| Pass |
 | Wishlist - add from store | - Products can be added to wishlist directly from the store |<img src="media/testing/manual_testing/wishlistadd.png" alt="Products added to wishlist from store.">| Pass | 
-| Cart - product added ||||
-| Cart - quantity updated ||||
-| Cart - product removed ||||
-| Checkout incomplete details |||| 
-| Checkout - save details |||| 
-| Stripe - incorrect number ||||
+| Cart - product added |- Alert displayed with correct details when product added to cart |<img src="media/testing/manual_testing/addtocart.png" alt="Products added cart correctly.">| Pass | 
+| Cart - quantity updated |- Alert displayed with correct details when cart is updated |<img src="media/testing/manual_testing/updatecart.png" alt="Products updated in cart correctly.">| Pass |
+| Cart - product removed |- Alert displayed with correct details when product is removed from cart |<img src="media/testing/manual_testing/removeitem.png" alt="Products removed from cart correctly.">| Pass |
+| Checkout incomplete details |- Checkout does not process if all mandatory details with * are filled in. |<img src="media/testing/manual_testing/incompletecheckout.png" alt="Incomplete checkout validation test.">| Pass |
+| Checkout - save details |- Save details to profile option works correctly when selected |<img src="media/testing/manual_testing/saveinfo.png" alt="User shipping details save to profile option">| Pass |
+| Stripe - incorrect number |- Only cards with completed and valid card numbers can be accepted for payments |<img src="media/testing/manual_testing/incompletecard.png" alt="Error message displaying if card number is incomplete or invalid.">| Pass |
 | Stripe - incomplete date |- Only cards with completed valid date can be accepted for payments |<img src="media/testing/manual_testing/incompletedate.png" alt="Error message displaying if card date is incomplete.">| Pass |
 | Stripe - expired card | - Only cards with expiry date in the future can be accepted for payments |<img src="media/testing/manual_testing/expiredcard.png" alt="Error message displaying if card is expired.">| Pass |
-| Stripe - incomplete security code ||||
-| Stripe - incomplete ZIP code ||||
+| Stripe - incomplete security code |- Only cards with complete security code can be accepted for payments |<img src="media/testing/manual_testing/securitycodeincomplete.png" alt="Error message displaying if security details are incorrect.">| Pass |
+| Stripe - incomplete ZIP code |- Only cards with completed and valid ZIP code can be accepted for payments |<img src="media/testing/manual_testing/ziperror.png" alt="Error message displaying for incomplete or invalid ZIP code.">| Pass |
 | Update User Profile - Pre-populated Data |- Pre saved data available on profile page.| <img src="media/testing/manual_testing/myprofile.png" alt="Pre saved data available on profile page.">| Pass |
 | User Profile - Order History |- Order history available on profile page.| <img src="media/testing/manual_testing/myprofile.png" alt="Order history available on my profile.">| Pass |
-| Order Confirmation - notification ||||
+| Order Confirmation - notification |- Alert is displayed correctly with users email and order number. |<img src="media/testing/manual_testing/orderalert.png" alt="Order confirmation alert displayed for user.">| Pass |
 | Order Success Page | -This page provides the user with a summary of their order, the shipping details, and the overall cost. | <img src="media/readme_media/checkoutsuccess.png" alt="An image of the checkout success page."> | Pass | 
 | Order Confirmation Email - email receipt ||||
 | Admin CRUD functionality | - The admin account has access to create, update and delete products, user information, newsletter subscribtions etc | <img src="media/testing/manual_testing/admincrud.png" alt="Admin access to CRUD functionality.">| Pass | 
 | Admin - restricted access | - Only the admin account can log into the admin view panel. |<img src="media/testing/manual_testing/adminaccess.png" alt="Admin access security test.">| Pass |
-
-
-
+| Error404 - Display |- Page displayed when incorrect url is searched for and redirect to home page works. |<img src="media/readme_media/error404.png" alt="Clip of the error404 page when incorrect url selected."> | Pass |
 
 <br/>
 
