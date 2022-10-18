@@ -258,7 +258,7 @@ Given more time to work on this project, the overall scope of the website could 
 | --- | --- | --- | --- | 
 | <a href="https://jshint.com/">JSHint </a>  |JavaScipt files | | Pass - missing semicolons added and repeat testing passed. |
 | <a href="https://jigsaw.w3.org/css-validator/#validate_by_input"> W3C CSS Validator </a> | All CSS files | <img src="media/testing/validation_testing/checkoutcss.png" alt="A screenshot of checkout.css results with no errors."> | Pass | 
-| <a href="https://validator.w3.org/nu/#textarea"> Html Checker  </a>| All HTML files | <img src="media/testing/validation_testing/cart_html.png" alt="A screenshot of cart.html results.">| Pass - Warnings can be ignored due to layout of HTML file | 
+| <a href="https://validator.w3.org/nu/#textarea"> Html Checker  </a>| All HTML source code was validated | <img src="media/testing/validation_testing/html.png" alt="A screenshot of html result summary.">| Pass - two stray / and a warning for unnecessary type attribute for JavaScript resources were identified and corrected during the validation process. | 
 | pycodestyle | all files containing Python code | <img src="media/testing/validation_testing/pep8.png" alt="A screenshot of pep8 results with no errors."> | Pass * | 
 
 * Pep8 Validation was completed using the following steps. 
