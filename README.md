@@ -12,7 +12,7 @@ Site admin users can add, update and delete products from the admin site.
 
 A link to the deployed website can be found <a href="https://forevergreen-cacti.herokuapp.com/" alt="A link to deployed heroku website">here</a>.
 
-<img src="#" alt="image of project responsiveness on varying screen sizes">
+<img src="media/readme_media/responsive.png" alt="image of project responsiveness on varying screen sizes">
 
 <!-- TOC --><a name="table-of-contents"></a>
 ## Table of Contents
@@ -28,7 +28,7 @@ A link to the deployed website can be found <a href="https://forevergreen-cacti.
     + [Future Features](#future-features)
     + [Languages Used](#languages-used)
     + [Technology Used](#technology-used)
-    + [Testing](#testing)
+    + [Manual Testing](#manual-testing)
       - [Validation Testing:](#validation-testing)
     + [Web Marketing:](#web-marketing)
     + [Bugs:](#bugs)
@@ -198,11 +198,59 @@ Given more time to work on this project, the overall scope of the website could 
 | Package Manager | Pip3 | Used to install extra software not found in Python Library
 <br/>
 
-<!-- TOC --><a name="testing"></a>
-### Testing
+<!-- TOC --><a name="manual-testing"></a>
+### Manual Testing
 | Feature Tested| Testing Method | Example | Result |  
 | --- | --- | --- | --- | 
+| Registration - Blank Field ||||
+| Registration - Invalid Email Field ||||
+| Registration - Common Password ||||
+| Registration - Short Password ||||
+| Registration - Short Username ||||
+| Registration - Email Verification ||||
+| Sign-In - - Blank Field ||||
+| Sign in - Incorrect Username Field ||||
+| Sign in - Incorrect Password Field ||||
+| Non-Signed in user - review ||||
+| Non-Signed in user - product detail ||||
+| Non-Signed in user - Profile menu ||||
+| Signed in user - review ||||
+| Signed in user - product detail ||||
+| Signed in user - Profile menu ||||
+| Signed in user - Checkout ||||
+| Signed in user - Review Author ||||
+| Signed in user - Review Not Author || <img src="media/testing/manual_testing/reviewnotauthor.png" alt="View of logged in user but not review author.">| Pass |
+| Update or Delete a review - author| |<img src="media/testing/manual_testing/editdeleteauth.png" alt="View of edit and delete options for review author.">| Pass |
+| Update a review - Pre-populated Data ||<img src="media/testing/manual_testing/updatereview.png" alt="View of logged in user but not review author.">| Pass |
+| Delete a review - author| - confirmation of review delete|<img src="media/testing/manual_testing/deletereviewconfirmation.png" alt="View of delete review confirmation.">| Pass |
+| Update User Profile - Pre-populated Data ||||
+| Site Alert - sign in ||||
+| Site Alert - sign out |- Alert requests user to confirm before logging out of site. |||
+| Site Alert - sign out |- Alert to confirm successful signing out. |||
+| Site Alert - review update |||| 
+| About Page - Links | Testing if signup and home page link are activated. Both of these links are active and take the user to the correct location on the site when selected. | <img src="media/readme_media/aboutforevergreen.png" alt="A page dedicated to forevergreen cacti and why the store exists">| Pass | 
+| Wishlist - add from store |||
+| Wishlist - remove |||
+| Wishlist - add from profile page |||
+| Cart - product added ||||
+| Cart - quantity updated ||||
+| Cart - product removed ||||
+| Checkout view ||||
+| Checkout incomplete details |||| 
+| Checkout - save details |||| 
+| Stripe - incorrect number ||||
+| Stripe - incomplete date ||||
+| Stripe - incomplete security code ||||
+| Stripe - incomplete ZIP code ||||
+| Update User Profile - Pre-populated Data |- Pre saved data available on profile page.| <img src="media/testing/manual_testing/myprofile.png" alt="Pre saved data available on profile page.">| Pass |
+| User Profile - Order History |- Order history available on profile page.| <img src="media/testing/manual_testing/myprofile.png" alt="Order history available on my profile.">| Pass |
+| Order Confirmation - notification ||||
+| Order Success Page | -This page provides the user with a summary of their order, the shipping details, and the overall cost. | <img src="media/readme_media/checkoutsuccess.png" alt="An image of the checkout success page."> | Pass | 
+| Order Confirmation Email - email receipt ||||
+| Admin CRUD functionality | - The admin account has access to create, update and delete products, user information, newsletter subscribtions etc | <img src="media/testing/manual_testing/admincrud.png" alt="Admin access to CRUD functionality.">| Pass | 
+| Admin - restricted access | - Only the admin account can log into the admin view panel. |<img src="media/testing/manual_testing/adminaccess.png" alt="Admin access security test.">| Pass |
 
+<br/>
 
 <!-- TOC --><a name="validation-testing"></a>
 #### Validation Testing:
@@ -227,7 +275,8 @@ Given more time to work on this project, the overall scope of the website could 
 <br/>
 
 #### Lighthouse Testing
-- The site was also tested for its <a href="https://web.dev/performance-scoring/"> Lighthouse Performance Score </a>and the results were as follows.
+- Lighthouse was used to check perfomance and accessiblitiy. Colour of the product buttons was adjusted to improve contrast ratio. 
+<img src="media/testing/validation_testing/lighthousescore.png" alt="A screenshot of lighthouse results.">
 
 <br/>
 
